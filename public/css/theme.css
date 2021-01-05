@@ -1,0 +1,547 @@
+/* || Theme CSS file for "looseleashdog" */
+
+:root {
+    --theme-blue: #3fc5f0;
+    --theme-lightblue: #ccf2fd;
+    --theme-lightblue-alt: #b0e9ff;
+    --theme-washedblue: #dcf7ff;
+    --theme-verylightblue: #ebfbff;
+    --theme-darkgreen: #00bf79; 
+    --theme-green: #6decb9; 
+    --theme-lightgreen: #9cefcd;
+    --theme-washedgreen: #befff0;
+    --theme-yellow: #feffef;
+    --theme-borders: #3a3b48;
+    --theme-border-light: #e6e6e6;
+    --primary-background: #ffffff;
+    --secondary-background: #f9f9f9;
+    --copy-light: #b4b4b4;
+    --copy-mid: #6a6a6a;
+    --copy-dark: #3a3b48;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --darken: rgba(0, 0, 0, 0.1);
+    --clear: rgba(0, 0, 0, 0);
+    --haze: rgba(255, 255, 255, 0.8);
+    --divider-top: #f0f0f0;
+    --divider-bottom: #f5f5f5;
+}
+
+body {
+    background-image: url(/images/flowers.png);
+    background-attachment: fixed;
+    background-color: var(--theme-lightblue);
+    color: var(--copy-mid);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--copy-dark);
+}
+
+/* || Link Styling */
+
+a {
+    padding-bottom: 1px;
+    border-bottom: 4px solid var(--clear);
+    color: var(--theme-darkgreen);
+    text-decoration: none;
+}
+
+p a {
+    border-bottom: 4px solid var(--clear);
+    transition: border-bottom .6s;
+}
+
+p a:hover {
+    border-bottom: 4px solid var(--theme-darkgreen);
+}
+
+footer a {
+    border-bottom: none;
+}
+
+footer a:hover {
+    border-bottom: none;
+}
+
+.link-impact {
+    padding-bottom: 3px;
+    border-top: 4px solid var(--theme-washedgreen);
+    border-bottom: 4px solid var(--theme-washedgreen);
+    font-family: phoreuscherokee, serif;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--theme-blue);
+    transition: border-bottom .6s, border-top .6s, color .6s;
+    -webkit-transition: border-bottom .6s, border-top .6s, color .6s;
+}
+
+.link-impact:hover {
+    border-top: 4px solid var(--theme-blue);
+    border-bottom: 4px solid var(--theme-blue);
+}
+
+.start-impact { /* On contact page, this element takes place of "Contact Me" link. This is styled the same without a pointer event or link */
+    padding-bottom: 3px;
+    border-top: 4px solid var(--theme-blue);
+    border-bottom: 4px solid var(--theme-blue);
+    font-family: phoreuscherokee, serif;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--theme-blue);
+}
+
+/* || ShareThis menu styles  */
+
+.share-wrapper {
+    border-color: var(--darken);
+    background-color: var(--theme-washedgreen);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+/* || Curator overlay links */
+
+.crt-popup-text-body a {
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--clear);
+    color: var(--theme-darkgreen) !important;
+    transition: border-bottom-color;
+}
+
+.crt-popup-text-body a:hover {
+    border-bottom: 1px solid var(--theme-darkgreen);
+}
+
+.crt-post-text a {
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--clear);
+    color: var(--theme-darkgreen) !important;
+    transition: border-bottom-color;
+}
+
+.crt-post-text a:hover {
+    border-bottom: 1px solid var(--theme-darkgreen);
+}
+
+/* || Main Layout Elements */
+
+.l-header {
+    border-bottom-color: var(--darken);
+    background-color: var(--theme-blue);
+}
+
+.l-body-wrapper {
+    background-color: var(--clear);
+}
+
+.l-content-wrapper {
+    box-shadow: 0px 0px 8px var(--shadow);
+    background-color: var(--primary-background);
+}
+
+.l-body-wrapper--contact {
+    background: url(/images/contact-background7.png);
+    background-size: cover;
+}
+
+.l-content-wrapper--contact {
+    box-shadow: 0px 0px 8px var(--shadow);
+    background-color: var(--clear);
+}
+
+.l-footer {
+    border-top-color: var(--darken);
+    background-color: var(--theme-washedgreen);
+}
+
+.divider-top {
+    border-top-color: var(--theme-border-light);
+    background: -moz-linear-gradient(var(--divider-top), white);
+    background: -webkit-linear-gradient(var(--divider-top), white);
+    background: -o-linear-gradient(var(--divider-top), white);
+    background: -ms-linear-gradient(var(--divider-top), white);
+    background: linear-gradient(var(--divider-top), white);
+}
+
+.divider-bottom {
+    border-bottom-color: var(--theme-border-light);
+    background: -moz-linear-gradient(white, var(--divider-bottom));
+    background: -webkit-linear-gradient(white, var(--divider-bottom));
+    background: -o-linear-gradient(white, var(--divider-bottom));
+    background: -ms-linear-gradient(white, var(--divider-bottom));
+    background: linear-gradient(white, var(--divider-bottom));
+}
+
+/* || Card Elements */
+
+.card {
+    box-shadow: 4px 2px 12px var(--shadow);
+    background-color: var(--theme-lightblue);
+    color: var(--copy-dark);
+}
+
+.card-hr {
+    background-color: var(--theme-lightblue-alt);
+}
+
+/* || Navbar  */
+
+.navbar-pane li {
+    padding-bottom: 3px;
+    border-radius: 4px; /* side curve of underbar */
+    color: var(--copy-dark);
+}
+
+.navbar-pane li:hover {
+    border-bottom: 5px solid var(--theme-yellow);
+}
+
+.h-menu-drop {
+    border-color: var(--darken);
+    border-bottom-left-radius: 8px;
+    background-color: var(--theme-blue);
+}
+
+.h-menu-bar {
+    border-radius: 1.5px;
+    background-color: var(--theme-blue);
+}
+
+.h-menu-box {
+    border-radius: 8px;
+    border-color: var(--theme-lightblue-alt);
+    background-color: var(--theme-lightblue);
+    transition: background-color .3s;
+}
+
+.h-menu-drop li {
+    border-radius: 4px;  /* side curve of underbar */
+    color: var(--copy-dark);
+}
+
+.h-menu-drop li:hover {
+    border-bottom: 5px solid var(--theme-yellow);
+}
+
+.current { /* this class is assigned via ejs in views/partials/header, cannot be found in any other .css file */
+    border-bottom-color: var(--theme-yellow) !important;
+    color: var(--theme-yellow) !important;
+}
+
+/* || Pages - Home  */
+
+.card--home {
+    background-color: var(--theme-lightblue-alt);
+    transition: background-color .1s linear;
+}
+
+.card--home:hover {
+    background-color: var(--theme-blue);
+}
+
+.home-card-inner-wrap {
+    border-radius: 10px;
+    background-color: var(--theme-verylightblue);
+}
+
+.home-card-top-section {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-color: var(--theme-lightblue-alt);
+    background-color: var(--theme-lightblue);
+}
+
+.card--home p {
+    color: var(--copy-mid);
+}
+
+.card--home h2 {
+    border-bottom-color: var(--theme-lightblue-alt);
+}
+
+/* || Pages - Services */
+
+.card--services-left {
+    background-color: var(--theme-lightblue-alt);
+}
+
+.card--services-right {
+    background-color: var(--theme-lightblue-alt);
+}
+
+.services-card-inner-wrap {
+    border-radius: 8px;
+    background-color: var(--theme-verylightblue);
+}
+
+.services-card-top-section {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-color: var(--theme-lightblue-alt);
+    background-color: var(--theme-lightblue);
+}
+
+.card--services-innerleft {
+    border-color: var(--theme-lightblue);
+    border-radius: 12px;
+}
+
+.card--services-innerright {
+    border-color: var(--theme-lightblue);
+    border-radius: 12px;
+}
+
+/* || Pages - Blog Main */
+
+.card--blog-main {
+    background-color: var(--theme-lightblue-alt);
+}
+
+.blog-card-inner-wrap {
+    border-radius: 8px;
+    background-color: var(--theme-verylightblue);
+}
+
+.blog-card-left-section {
+    border-top-left-radius: 8px;
+    border-right-color: var(--theme-lightblue-alt);
+    border-bottom-left-radius: 8px;
+    background-color: var(--theme-lightblue);
+}
+
+.intro-img img {
+    border-color: var(--theme-blue);
+    border-radius: 12px;
+    background-color: var(--theme-blue);
+}
+
+.intro-text-box p:nth-child(3) {  /* description */
+    color: var(--copy-mid);
+}
+
+.intro-read-more { /* button */
+    border-color: var(--theme-lightblue-alt);
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: var(--copy-dark);
+    background-color: var(--theme-green);
+    transition: background-color .1s ease-out;
+}
+
+.intro-read-more:hover {
+    background-color: var(--theme-blue);
+    cursor: pointer;
+}
+
+/* || Blog Post */
+
+.slice-link p {
+    border-left-color: var(--theme-darkgreen);
+}
+
+.slice-quote {
+    border-left-color: var(--theme-blue);
+}
+
+.post-meta p {
+    color: var(--copy-light);
+}
+
+.slice-quote p:nth-child(1) {
+    color: var(--theme-blue);
+}
+
+.slice-quote p:nth-child(2) {
+    opacity: 0.8;
+    color: var(--theme-blue);
+}
+
+.slice-gallery {
+    border-top-color: var(--theme-lightblue-alt);
+    border-bottom-color: var(--theme-lightblue-alt);
+    background-color: var(--theme-lightblue);
+}
+
+.post-gallery-img {
+    border-color: var(--theme-blue);
+    border-radius: 12px;
+    background-color: var(--theme-blue);
+}
+
+.post-gallery-caption {
+    color: var(--copy-mid);
+}
+
+.post-return {
+    border-color: var(--theme-lightblue-alt);
+    border-radius: 12px;
+    background-color: var(--theme-green);
+    transition: background-color .3s;
+}
+
+.post-return:hover {
+    background-color: var(--theme-blue);
+}
+
+/* || Curator Carosel */
+
+.carousel--curator {
+    background-color: var(--theme-blue);
+}
+
+.left-button-center {
+    background-color: var(--theme-blue);
+}
+
+.left-button-center button {
+    background-color: var(--clear);
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity .3s;
+}
+
+.crt-post-footer {
+    border-top-color: var(--theme-blue) !important;
+}
+
+.crt-popup-text-body {
+    color: var(--copy-mid);
+}
+
+.right-button-center {
+    background-color: var(--theme-blue);
+}
+
+.right-button-center button {
+    background-color: var(--clear);
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity .3s;
+}
+
+.viewport {
+    border-color: var(--theme-blue);
+}
+
+.left-button-wrap {
+    background-color: var(--theme-blue);
+}
+
+.right-button-wrap {
+    background-color: var(--theme-blue);
+}
+
+.card-pane--photos p {
+    color: var(--copy-light);
+}
+
+.card--photos img {
+    border-color: var(--theme-blue);
+    border-radius: 12px;
+    background-color: var(--theme-blue);
+}
+
+/* || Pages - Contact */
+
+.hidden-response {
+    border-radius: 8px;
+    background-color: var(--theme-verylightblue);
+}
+
+.hidden-button {
+    border-color: var(--theme-lightblue-alt);
+    border-radius: 12px;
+    color: var(--copy-dark);
+    background-color: var(--theme-green);
+    transition: background-color .1s ease-out;
+}
+
+.hidden-button:hover {
+    background-color: var(--theme-blue);
+    cursor: pointer;
+}
+
+/* || Contact Form  */
+
+.card--contact-form {
+    background-color: var(--theme-lightblue-alt);
+}
+
+.contact-card-inner-wrap {
+    border-radius: 8px;
+    background-color: var(--theme-verylightblue);
+}
+
+.contact-card-top-section {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-color: var(--theme-lightblue-alt);
+    background-color: var(--theme-lightblue);
+}
+
+input:focus {
+    outline: 1px solid var(--theme-blue);
+}
+
+textarea:focus {
+    outline: 1px solid var(--theme-blue);
+}
+
+.form-title {
+    color: var(--copy-mid);
+}
+
+.form-entry {
+    border-color: var(--theme-lightblue-alt);
+    color: var(--copy-mid);
+}
+
+.form-textarea {
+    border-color: var(--theme-lightblue-alt);
+}
+
+.contact-submit {
+    border-color: var(--theme-lightblue-alt);
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: var(--copy-dark);
+    background-color: var(--theme-lightgreen);
+    transition: background-color .1s ease-out;
+}
+
+.contact-submit:hover {
+    cursor: pointer;
+}
+
+/* || Footer */
+
+.share-menu-pane {
+    transition: margin-top 1s;
+}
+
+.footer-social button {
+    cursor: pointer;
+    border-radius: 12px;
+    border-color: var(--theme-blue);
+    background: url(/images/share.png);
+    background-color: var(--theme-lightblue);
+    transition: background-color .3s;
+}
+
+.footer-attributions {
+    color: var(--copy-light);
+}
+
+.footer-goodbye {
+    color: var(--copy-mid);
+}
+
+
+/* || END of document  */

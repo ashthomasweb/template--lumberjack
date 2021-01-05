@@ -1,0 +1,288 @@
+/* || layout CSS file for "looseleashdog" */
+
+/* || Header */
+
+.l-header {
+    z-index: 90;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 66px;
+    border-bottom: 3px solid;
+    text-align: center;
+}
+
+.l-header-wrapper {
+    z-index: 50;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.l-home-header {
+    position: relative;
+    height: 120px;
+}
+
+.wrap-home1 {
+    position: relative;
+    display: inline-block;
+}
+
+.wrap-home2 {
+    position: relative;
+    display: inline-block;
+}
+
+/* || Navigation Bar */
+
+.navbar-pane {
+    position: relative;
+    top: 21px;
+    float: right;
+}
+
+.navbar-pane li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 21px;
+}
+
+.h-menu-drop {
+    z-index: 83;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: auto;
+    height: 45px;
+    padding: 10px;
+    border: 3px solid;
+    border-right: 0;
+    border-top: 0;
+}
+
+.h-menu-drop li {
+    display: inline-block;
+    padding-bottom: 3px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* || Body */
+
+.l-body-wrapper--home {
+    max-width: 1000px;
+    min-height: calc(100vh - 246px);
+    margin: 0px auto 0px;
+}
+
+.l-body-wrapper {
+    max-width: 1000px;
+    min-height: calc(100vh - 186px);
+    margin: 60px auto 0px auto;
+}
+
+.l-content-wrapper {
+    padding-bottom: 40px;
+}
+
+.l-body-wrapper--contact {
+    max-width: 1000px;
+    min-height: calc(100vh - 186px);
+    margin: 60px auto 0px auto;
+    background: url(/images/contact-background7.png);
+    background-size: cover;
+}
+
+.l-content-wrapper--contact {
+    padding-bottom: 40px;
+    position: relative;
+}
+
+/* || Footer */
+
+.l-footer {
+    position: absolute;
+    z-index: 60;
+    box-sizing: content-box;
+    height: 120px;
+    text-align: center;
+    width: 100%;
+    border-top: 3px solid;
+}
+
+.l-footer-wrapper {
+    width: 100%;
+    height: 120px;
+    max-width: 1000px;
+    padding: 35px 0;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.share-menu-pane {
+    z-index: 50;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.share-wrapper {
+    padding: 10px 10px 1px;
+    max-width: 700px;
+    margin: 0 15px;
+    border: solid 3px;
+}
+
+/* || Layout Boxes */
+
+.l-box-third {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    margin: 0px auto;
+    font-size: 18px;
+}
+
+.l-box-half {
+    display: inline-block;
+    width: 50%;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* || Card Global */
+
+.card {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.card-hr {
+    width: 50%;
+    height: 2px;
+    border: none;
+}
+
+/* || Section Dividers */
+
+.l-divider {
+    width: 100%;
+    height: 40px;
+}
+
+.divider-top {
+    border-top: 1px solid;
+}
+
+.divider-bottom {
+    border-bottom: 1px solid;
+}
+
+/* || Atomic classes */
+
+.margin-b-85 {
+    margin-bottom: 85px;
+}
+
+.margin-t-neg30 {
+    margin-top: -30px;
+}
+
+.margin-b-40 {
+    margin-bottom: 40px
+}
+
+.whitespace-10 {
+    height: 10px
+}
+
+.margin-b-50 {
+    margin-bottom: 50px
+}
+
+.margin-b-neg28 {
+    margin-bottom: -28px;
+}
+
+/* || Small logo */
+
+.smlogo-pane {
+    position: fixed;
+    padding: 7px 0 0 10px;
+}
+
+.logo-sm {
+    display: inline-block;
+    width: 330px;
+    margin-top: 4px;
+    margin-left: -10px;
+}
+
+/* || Large Logo  */
+
+.logo-pane {
+    height: 120px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-main {
+    display: inline-block;
+    width: 800px;
+    margin-top: 7px;
+    margin-left: -5px;
+}
+
+/* || Footer */
+
+footer {
+    position: relative;
+    height: 123px;
+}
+
+.footer-social button {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    margin: 2px 10px 0;
+    vertical-align: top;
+    border: 4px solid;
+}
+
+.footer-social img {
+    width: 54px;
+    margin: 2px 10px 0;
+}
+
+.footer-attributions {
+    height: 52px;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.footer-attributions p:nth-child(1) {
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.footer-attributions p:nth-child(2) {
+    display: inline-block;
+}
+
+.footer-goodbye {
+    margin-top: -3px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+
+
+/* || END of document  */
