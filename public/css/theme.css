@@ -8,9 +8,9 @@
     --theme-verylightblue: #ddf0e6;
 
     --theme-darkgreen: #00bf79; 
-    --theme-green: #6decb9; 
-    --theme-lightgreen: #9cefcd;
-    --theme-washedgreen: #befff0;
+    --theme-green: #aa8976; 
+    --theme-lightgreen: #f0e2d0;
+    --theme-washedgreen: #ad9588;
 
     --theme-yellow: #feffef;
     --theme-borders: #3a3b48;
@@ -66,6 +66,7 @@ p a:hover {
 
 footer a {
     border-bottom: none;
+    color: var(--theme-borders);
 }
 
 footer a:hover {
@@ -80,14 +81,14 @@ footer a:hover {
     font-style: normal;
     font-size: 35px;
     font-weight: 700;
-    color: var(--theme-blue);
+    color: var(--theme-borders);
     transition: border-bottom .6s, border-top .6s, color .6s;
     -webkit-transition: border-bottom .6s, border-top .6s, color .6s;
 }
 
 .link-impact:hover {
-    border-top: 4px solid var(--theme-blue);
-    border-bottom: 4px solid var(--theme-blue);
+    border-top: 4px solid var(--theme-borders);
+    border-bottom: 4px solid var(--theme-borders);
 }
 
 .start-impact { /* On contact page, this element takes place of "Contact Me" link. This is styled the same without a pointer event or link */
@@ -533,10 +534,8 @@ textarea:focus {
 .footer-social button {
     cursor: pointer;
     border-radius: 12px;
-    border-color: var(--theme-blue);
+    border: none;
     background: url(/images/share.png);
-    background-color: var(--theme-lightblue);
-    transition: background-color .3s;
 }
 
 .footer-attributions {
