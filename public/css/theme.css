@@ -1,17 +1,21 @@
 /* || Theme CSS file for "looseleashdog" */
 
 :root {
-    --theme-blue: #3fc5f0;
-    --theme-lightblue: #ccf2fd;
-    --theme-lightblue-alt: #b0e9ff;
-    --theme-washedblue: #dcf7ff;
-    --theme-verylightblue: #ebfbff;
+    /* primary theme colors  */
+    --theme-blue: #239d70;
+    --theme-lightblue: #96ebcf;
+    --theme-lightblue-alt: #59cc92;
+    --theme-verylightblue: #ddf0e6;
+
     --theme-darkgreen: #00bf79; 
     --theme-green: #6decb9; 
     --theme-lightgreen: #9cefcd;
     --theme-washedgreen: #befff0;
+
     --theme-yellow: #feffef;
     --theme-borders: #3a3b48;
+
+    /* greyscale theme colors  */
     --theme-border-light: #e6e6e6;
     --primary-background: #ffffff;
     --secondary-background: #f9f9f9;
@@ -27,9 +31,9 @@
 }
 
 body {
-    background-image: url(/images/flowers.png);
+    background-image: url(/images/purty-wood.png);
     background-attachment: fixed;
-    background-color: var(--theme-lightblue);
+    background-color: #212125;
     color: var(--copy-mid);
 }
 

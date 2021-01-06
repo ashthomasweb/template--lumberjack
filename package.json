@@ -1,14 +1,13 @@
 {
   "name": "template--ejs-prismic-curator-emailjs",
   "version": "1.0.0",
-  "description": "Known Issues\r # Project Name\r > A template project",
+  "description": "A template project",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
-    "livereload": "^0.9.1",
     "prismic-dom": "^2.2.3",
     "prismic-javascript": "^3.0.2"
   },
