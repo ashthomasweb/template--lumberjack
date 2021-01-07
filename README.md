@@ -1,11 +1,11 @@
-Known Issues
 # Project Name
-> A template project
+> LumberJack - a lightweight template fully integrated with Prismic, Curator, and EmailJS.
 
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+* [API](#api)
 * [Setup](#setup)
 * [Features](#features)
 * [Known Issues](#known-issues)
@@ -14,16 +14,23 @@ Known Issues
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+This template is greatefor a local business taking their products or services to the web. Artisans and private businesses need a way to integrate social media, ongoing public interest, and a strong brand sense. LumberJack provides a quick setup for even a beginner front-end developer.
 
 ## Screenshots
 ![Example screenshot](.images/img/screenshot.png)
 
 ## Technologies
-* HTML5
-* CSS3
+* Node
+* EJS
+* HTML
+* CSS
 * ES6
-* jQuery - 3.5.1
+
+## API
+* Prismic
+* Curator
+* EmailJS
+* ShareThis
 
 ## Features
 List of features ready and TODOs for future development
@@ -36,10 +43,10 @@ To-do list:
 * Wow improvement to be done 2
 
 ## Known Issues
-
+* Incomplete.
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+Project is: _in progress_.
 
 ## Inspiration
 Add here credits. Project inspired by..., based on...
