@@ -7,21 +7,25 @@
     --theme-lightblue-alt: #59cc92;
     --theme-verylightblue: #ddf0e6;
 
+    /* secondary theme colors  */
     --theme-darkgreen: #00bf79; 
     --theme-green: #aa8976; 
     --theme-lightgreen: #f0e2d0;
     --theme-washedgreen: #ad9588;
 
-    --theme-yellow: #feffef;
+    /* highlight color  */
+    --theme-yellow: #f0e2d0;
+    
     --theme-borders: #3a3b48;
+    --copy-dark: #3a3b48;
 
+    
     /* greyscale theme colors  */
     --theme-border-light: #e6e6e6;
     --primary-background: #ffffff;
     --secondary-background: #f9f9f9;
     --copy-light: #b4b4b4;
     --copy-mid: #6a6a6a;
-    --copy-dark: #3a3b48;
     --shadow: rgba(0, 0, 0, 0.4);
     --darken: rgba(0, 0, 0, 0.1);
     --clear: rgba(0, 0, 0, 0);
