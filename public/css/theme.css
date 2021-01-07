@@ -2,26 +2,26 @@
 
 :root {
     /* primary theme colors  */
-    --theme-blue: #239d70;
-    --theme-lightblue: #96ebcf;
-    --theme-lightblue-alt: #59cc92;
-    --theme-verylightblue: #ddf0e6;
+    --primary-color: #239d70;
+    --primary-light: #c7e9de;
+    --primary-very-light: #ddf0e6;
+    --primary-light-alt: #59cc92;
 
     /* secondary theme colors  */
-    --theme-darkgreen: #00bf79; 
-    --theme-green: #aa8976; 
-    --theme-lightgreen: #f0e2d0;
-    --theme-washedgreen: #ad9588;
+    --secondary-dark: #8f7667; 
+    --secondary-color: #aa8976; 
+    --secondary-light: #f0e2d0;
+    --secondary-pale: #ad9588;
 
     /* highlight color  */
-    --theme-yellow: #f0e2d0;
+    --secondary-highlight: #f0e2d0;
     
-    --theme-borders: #3a3b48;
+    --borders: #3a3b48;
     --copy-dark: #3a3b48;
 
     
     /* greyscale theme colors  */
-    --theme-border-light: #e6e6e6;
+    --border-light: #e6e6e6;
     --primary-background: #ffffff;
     --secondary-background: #f9f9f9;
     --copy-light: #b4b4b4;
@@ -55,7 +55,7 @@ h6 {
 a {
     padding-bottom: 1px;
     border-bottom: 4px solid var(--clear);
-    color: var(--theme-darkgreen);
+    color: var(--secondary-dark);
     text-decoration: none;
 }
 
@@ -65,12 +65,12 @@ p a {
 }
 
 p a:hover {
-    border-bottom: 4px solid var(--theme-darkgreen);
+    border-bottom: 4px solid var(--secondary-dark);
 }
 
 footer a {
     border-bottom: none;
-    color: var(--theme-borders);
+    color: var(--borders);
 }
 
 footer a:hover {
@@ -79,38 +79,38 @@ footer a:hover {
 
 .link-impact {
     padding-bottom: 3px;
-    border-top: 4px solid var(--theme-washedgreen);
-    border-bottom: 4px solid var(--theme-washedgreen);
+    border-top: 4px solid var(--secondary-pale);
+    border-bottom: 4px solid var(--secondary-pale);
     font-family: phoreuscherokee, serif;
     font-style: normal;
     font-size: 35px;
     font-weight: 700;
-    color: var(--theme-borders);
+    color: var(--borders);
     transition: border-bottom .6s, border-top .6s, color .6s;
     -webkit-transition: border-bottom .6s, border-top .6s, color .6s;
 }
 
 .link-impact:hover {
-    border-top: 4px solid var(--theme-borders);
-    border-bottom: 4px solid var(--theme-borders);
+    border-top: 4px solid var(--borders);
+    border-bottom: 4px solid var(--borders);
 }
 
 .start-impact { /* On contact page, this element takes place of "Contact Me" link. This is styled the same without a pointer event or link */
     padding-bottom: 3px;
-    border-top: 4px solid var(--theme-blue);
-    border-bottom: 4px solid var(--theme-blue);
+    border-top: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
     font-family: phoreuscherokee, serif;
     font-style: normal;
     font-size: 35px;
     font-weight: 700;
-    color: var(--theme-blue);
+    color: var(--primary-color);
 }
 
 /* || ShareThis menu styles  */
 
 .share-wrapper {
     border-color: var(--darken);
-    background-color: var(--theme-washedgreen);
+    background-color: var(--secondary-pale);
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 }
@@ -120,30 +120,30 @@ footer a:hover {
 .crt-popup-text-body a {
     padding-bottom: 2px;
     border-bottom: 1px solid var(--clear);
-    color: var(--theme-darkgreen) !important;
+    color: var(--secondary-dark) !important;
     transition: border-bottom-color;
 }
 
 .crt-popup-text-body a:hover {
-    border-bottom: 1px solid var(--theme-darkgreen);
+    border-bottom: 1px solid var(--secondary-dark);
 }
 
 .crt-post-text a {
     padding-bottom: 1px;
     border-bottom: 1px solid var(--clear);
-    color: var(--theme-darkgreen) !important;
+    color: var(--secondary-dark) !important;
     transition: border-bottom-color;
 }
 
 .crt-post-text a:hover {
-    border-bottom: 1px solid var(--theme-darkgreen);
+    border-bottom: 1px solid var(--secondary-dark);
 }
 
 /* || Main Layout Elements */
 
 .l-header {
     border-bottom-color: var(--darken);
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .l-body-wrapper {
@@ -167,11 +167,11 @@ footer a:hover {
 
 .l-footer {
     border-top-color: var(--darken);
-    background-color: var(--theme-washedgreen);
+    background-color: var(--secondary-pale);
 }
 
 .divider-top {
-    border-top-color: var(--theme-border-light);
+    border-top-color: var(--border-light);
     background: -moz-linear-gradient(var(--divider-top), white);
     background: -webkit-linear-gradient(var(--divider-top), white);
     background: -o-linear-gradient(var(--divider-top), white);
@@ -180,7 +180,7 @@ footer a:hover {
 }
 
 .divider-bottom {
-    border-bottom-color: var(--theme-border-light);
+    border-bottom-color: var(--border-light);
     background: -moz-linear-gradient(white, var(--divider-bottom));
     background: -webkit-linear-gradient(white, var(--divider-bottom));
     background: -o-linear-gradient(white, var(--divider-bottom));
@@ -192,12 +192,12 @@ footer a:hover {
 
 .card {
     box-shadow: 4px 2px 12px var(--shadow);
-    background-color: var(--theme-lightblue);
+    background-color: var(--primary-light);
     color: var(--copy-dark);
 }
 
 .card-hr {
-    background-color: var(--theme-lightblue-alt);
+    background-color: var(--primary-light-alt);
 }
 
 /* || Navbar  */
@@ -209,24 +209,24 @@ footer a:hover {
 }
 
 .navbar-pane li:hover {
-    border-bottom: 5px solid var(--theme-yellow);
+    border-bottom: 5px solid var(--secondary-highlight);
 }
 
 .h-menu-drop {
     border-color: var(--darken);
     border-bottom-left-radius: 8px;
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .h-menu-bar {
     border-radius: 1.5px;
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .h-menu-box {
     border-radius: 8px;
-    border-color: var(--theme-lightblue-alt);
-    background-color: var(--theme-lightblue);
+    border-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
     transition: background-color .3s;
 }
 
@@ -236,35 +236,35 @@ footer a:hover {
 }
 
 .h-menu-drop li:hover {
-    border-bottom: 5px solid var(--theme-yellow);
+    border-bottom: 5px solid var(--secondary-highlight);
 }
 
 .current { /* this class is assigned via ejs in views/partials/header, cannot be found in any other .css file */
-    border-bottom-color: var(--theme-yellow) !important;
-    color: var(--theme-yellow) !important;
+    border-bottom-color: var(--secondary-highlight) !important;
+    color: var(--secondary-highlight) !important;
 }
 
 /* || Pages - Home  */
 
 .card--home {
-    background-color: var(--theme-lightblue-alt);
+    background-color: var(--primary-light-alt);
     transition: background-color .1s linear;
 }
 
 .card--home:hover {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .home-card-inner-wrap {
     border-radius: 10px;
-    background-color: var(--theme-verylightblue);
+    background-color: var(--primary-very-light);
 }
 
 .home-card-top-section {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-color: var(--theme-lightblue-alt);
-    background-color: var(--theme-lightblue);
+    border-bottom-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
 }
 
 .card--home p {
@@ -272,63 +272,63 @@ footer a:hover {
 }
 
 .card--home h2 {
-    border-bottom-color: var(--theme-lightblue-alt);
+    border-bottom-color: var(--primary-light-alt);
 }
 
 /* || Pages - Services */
 
 .card--services-left {
-    background-color: var(--theme-lightblue-alt);
+    background-color: var(--primary-light-alt);
 }
 
 .card--services-right {
-    background-color: var(--theme-lightblue-alt);
+    background-color: var(--primary-light-alt);
 }
 
 .services-card-inner-wrap {
     border-radius: 8px;
-    background-color: var(--theme-verylightblue);
+    background-color: var(--primary-very-light);
 }
 
 .services-card-top-section {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-bottom-color: var(--theme-lightblue-alt);
-    background-color: var(--theme-lightblue);
+    border-bottom-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
 }
 
 .card--services-innerleft {
-    border-color: var(--theme-lightblue);
+    border-color: var(--primary-light);
     border-radius: 12px;
 }
 
 .card--services-innerright {
-    border-color: var(--theme-lightblue);
+    border-color: var(--primary-light);
     border-radius: 12px;
 }
 
 /* || Pages - Blog Main */
 
 .card--blog-main {
-    background-color: var(--theme-lightblue-alt);
+    background-color: var(--primary-light-alt);
 }
 
 .blog-card-inner-wrap {
     border-radius: 8px;
-    background-color: var(--theme-verylightblue);
+    background-color: var(--primary-very-light);
 }
 
 .blog-card-left-section {
     border-top-left-radius: 8px;
-    border-right-color: var(--theme-lightblue-alt);
+    border-right-color: var(--primary-light-alt);
     border-bottom-left-radius: 8px;
-    background-color: var(--theme-lightblue);
+    background-color: var(--primary-light);
 }
 
 .intro-img img {
-    border-color: var(--theme-blue);
+    border-color: var(--primary-color);
     border-radius: 12px;
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .intro-text-box p:nth-child(3) {  /* description */
@@ -336,27 +336,27 @@ footer a:hover {
 }
 
 .intro-read-more { /* button */
-    border-color: var(--theme-lightblue-alt);
+    border-color: var(--primary-light-alt);
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
     color: var(--copy-dark);
-    background-color: var(--theme-green);
+    background-color: var(--secondary-color);
     transition: background-color .1s ease-out;
 }
 
 .intro-read-more:hover {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
     cursor: pointer;
 }
 
 /* || Blog Post */
 
 .slice-link p {
-    border-left-color: var(--theme-darkgreen);
+    border-left-color: var(--secondary-dark);
 }
 
 .slice-quote {
-    border-left-color: var(--theme-blue);
+    border-left-color: var(--primary-color);
 }
 
 .post-meta p {
@@ -364,24 +364,24 @@ footer a:hover {
 }
 
 .slice-quote p:nth-child(1) {
-    color: var(--theme-blue);
+    color: var(--primary-color);
 }
 
 .slice-quote p:nth-child(2) {
     opacity: 0.8;
-    color: var(--theme-blue);
+    color: var(--primary-color);
 }
 
 .slice-gallery {
-    border-top-color: var(--theme-lightblue-alt);
-    border-bottom-color: var(--theme-lightblue-alt);
-    background-color: var(--theme-lightblue);
+    border-top-color: var(--primary-light-alt);
+    border-bottom-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
 }
 
 .post-gallery-img {
-    border-color: var(--theme-blue);
+    border-color: var(--primary-color);
     border-radius: 12px;
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .post-gallery-caption {
@@ -389,24 +389,24 @@ footer a:hover {
 }
 
 .post-return {
-    border-color: var(--theme-lightblue-alt);
+    border-color: var(--primary-light-alt);
     border-radius: 12px;
-    background-color: var(--theme-green);
+    background-color: var(--secondary-color);
     transition: background-color .3s;
 }
 
 .post-return:hover {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 /* || Curator Carosel */
 
 .carousel--curator {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .left-button-center {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .left-button-center button {
@@ -417,7 +417,7 @@ footer a:hover {
 }
 
 .crt-post-footer {
-    border-top-color: var(--theme-blue) !important;
+    border-top-color: var(--primary-color) !important;
 }
 
 .crt-popup-text-body {
@@ -425,7 +425,7 @@ footer a:hover {
 }
 
 .right-button-center {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .right-button-center button {
@@ -436,15 +436,15 @@ footer a:hover {
 }
 
 .viewport {
-    border-color: var(--theme-blue);
+    border-color: var(--primary-color);
 }
 
 .left-button-wrap {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .right-button-wrap {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 .card-pane--photos p {
@@ -452,55 +452,55 @@ footer a:hover {
 }
 
 .card--photos img {
-    border-color: var(--theme-blue);
+    border-color: var(--primary-color);
     border-radius: 12px;
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
 }
 
 /* || Pages - Contact */
 
 .hidden-response {
     border-radius: 8px;
-    background-color: var(--theme-verylightblue);
+    background-color: var(--primary-very-light);
 }
 
 .hidden-button {
-    border-color: var(--theme-lightblue-alt);
+    border-color: var(--primary-light-alt);
     border-radius: 12px;
     color: var(--copy-dark);
-    background-color: var(--theme-green);
+    background-color: var(--secondary-color);
     transition: background-color .1s ease-out;
 }
 
 .hidden-button:hover {
-    background-color: var(--theme-blue);
+    background-color: var(--primary-color);
     cursor: pointer;
 }
 
 /* || Contact Form  */
 
 .card--contact-form {
-    background-color: var(--theme-lightblue-alt);
+    background-color: var(--primary-light-alt);
 }
 
 .contact-card-inner-wrap {
     border-radius: 8px;
-    background-color: var(--theme-verylightblue);
+    background-color: var(--primary-very-light);
 }
 
 .contact-card-top-section {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-bottom-color: var(--theme-lightblue-alt);
-    background-color: var(--theme-lightblue);
+    border-bottom-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
 }
 
 input:focus {
-    outline: 1px solid var(--theme-blue);
+    outline: 1px solid var(--primary-color);
 }
 
 textarea:focus {
-    outline: 1px solid var(--theme-blue);
+    outline: 1px solid var(--primary-color);
 }
 
 .form-title {
@@ -508,20 +508,20 @@ textarea:focus {
 }
 
 .form-entry {
-    border-color: var(--theme-lightblue-alt);
+    border-color: var(--primary-light-alt);
     color: var(--copy-mid);
 }
 
 .form-textarea {
-    border-color: var(--theme-lightblue-alt);
+    border-color: var(--primary-light-alt);
 }
 
 .contact-submit {
-    border-color: var(--theme-lightblue-alt);
+    border-color: var(--primary-light-alt);
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
     color: var(--copy-dark);
-    background-color: var(--theme-lightgreen);
+    background-color: var(--secondary-light);
     transition: background-color .1s ease-out;
 }
 
