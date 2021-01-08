@@ -35,7 +35,7 @@
 }
 
 body {
-    background-image: url(/images/purty-wood.png);
+    background-image: url(/images/patterns/purty-wood.png);
     background-attachment: fixed;
     background-color: #212125;
     color: var(--copy-mid);
