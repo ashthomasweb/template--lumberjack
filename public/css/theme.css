@@ -549,7 +549,7 @@ textarea:focus {
     cursor: pointer;
     border-radius: 12px;
     border: none;
-    background: url(/images/share.png);
+    background: url(/images/icons/share.png);
 }
 
 .footer-attributions {
