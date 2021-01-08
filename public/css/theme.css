@@ -3,18 +3,18 @@
 :root {
     /* primary theme colors  */
     --primary-color: #239d70;
-    --primary-light: #c7e9de;
-    --primary-very-light: #ddf0e6;
-    --primary-light-alt: #59cc92;
+    --primary-light: #8adcb3;
+    --primary-pale: #c7e9de;
+    --primary-very-light: #edfffb;
 
     /* secondary theme colors  */
-    --secondary-dark: #8f7667; 
-    --secondary-color: #aa8976; 
-    --secondary-light: #f0e2d0;
-    --secondary-pale: #ad9588;
+    --secondary-color: #a58d7f; 
+    --secondary-light: #c7b5ab; 
+    --secondary-pale: #d6cac3;
+    --secondary-very-light: #fffbf5;
 
     /* highlight color  */
-    --secondary-highlight: #f0e2d0;
+    --highlight: #f0e2d0;
     
     --borders: #3a3b48;
     --copy-dark: #3a3b48;
@@ -55,7 +55,7 @@ h6 {
 a {
     padding-bottom: 1px;
     border-bottom: 4px solid var(--clear);
-    color: var(--secondary-dark);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ p a {
 }
 
 p a:hover {
-    border-bottom: 4px solid var(--secondary-dark);
+    border-bottom: 4px solid var(--secondary-color);
 }
 
 footer a {
@@ -120,23 +120,23 @@ footer a:hover {
 .crt-popup-text-body a {
     padding-bottom: 2px;
     border-bottom: 1px solid var(--clear);
-    color: var(--secondary-dark) !important;
+    color: var(--secondary-color) !important;
     transition: border-bottom-color;
 }
 
 .crt-popup-text-body a:hover {
-    border-bottom: 1px solid var(--secondary-dark);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .crt-post-text a {
     padding-bottom: 1px;
     border-bottom: 1px solid var(--clear);
-    color: var(--secondary-dark) !important;
+    color: var(--secondary-color) !important;
     transition: border-bottom-color;
 }
 
 .crt-post-text a:hover {
-    border-bottom: 1px solid var(--secondary-dark);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 /* || Main Layout Elements */
@@ -192,13 +192,23 @@ footer a:hover {
 
 .card {
     box-shadow: 4px 2px 12px var(--shadow);
-    background-color: var(--primary-light);
+    background-color: var(--primary-pale);
     color: var(--copy-dark);
 }
 
 .card-hr {
-    background-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
 }
+
+.card-hr-secondary {
+    background-color: var(--secondary-light);
+    height: 5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+
 
 /* || Navbar  */
 
@@ -209,7 +219,7 @@ footer a:hover {
 }
 
 .navbar-pane li:hover {
-    border-bottom: 5px solid var(--secondary-highlight);
+    border-bottom: 5px solid var(--highlight);
 }
 
 .h-menu-drop {
@@ -225,8 +235,8 @@ footer a:hover {
 
 .h-menu-box {
     border-radius: 8px;
-    border-color: var(--primary-light-alt);
-    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    background-color: var(--primary-pale);
     transition: background-color .3s;
 }
 
@@ -236,18 +246,18 @@ footer a:hover {
 }
 
 .h-menu-drop li:hover {
-    border-bottom: 5px solid var(--secondary-highlight);
+    border-bottom: 5px solid var(--highlight);
 }
 
 .current { /* this class is assigned via ejs in views/partials/header, cannot be found in any other .css file */
-    border-bottom-color: var(--secondary-highlight) !important;
-    color: var(--secondary-highlight) !important;
+    border-bottom-color: var(--highlight) !important;
+    color: var(--highlight) !important;
 }
 
 /* || Pages - Home  */
 
 .card--home {
-    background-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
     transition: background-color .1s linear;
 }
 
@@ -263,8 +273,8 @@ footer a:hover {
 .home-card-top-section {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-color: var(--primary-light-alt);
-    background-color: var(--primary-light);
+    border-bottom-color: var(--primary-light);
+    background-color: var(--primary-pale);
 }
 
 .card--home p {
@@ -272,63 +282,63 @@ footer a:hover {
 }
 
 .card--home h2 {
-    border-bottom-color: var(--primary-light-alt);
+    border-bottom-color: var(--primary-light);
 }
 
 /* || Pages - Services */
 
 .card--services-left {
-    background-color: var(--primary-light-alt);
+    background-color: var(--secondary-light);
 }
 
 .card--services-right {
-    background-color: var(--primary-light-alt);
+    background-color: var(--secondary-light);
 }
 
 .services-card-inner-wrap {
     border-radius: 8px;
-    background-color: var(--primary-very-light);
+    background-color: var(--secondary-very-light);
 }
 
 .services-card-top-section {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-bottom-color: var(--primary-light-alt);
-    background-color: var(--primary-light);
+    border-bottom-color: var(--secondary-light);
+    background-color: var(--secondary-pale);
 }
 
 .card--services-innerleft {
-    border-color: var(--primary-light);
+    border-color: var(--primary-pale);
     border-radius: 12px;
 }
 
 .card--services-innerright {
-    border-color: var(--primary-light);
+    border-color: var(--primary-pale);
     border-radius: 12px;
 }
 
 /* || Pages - Blog Main */
 
 .card--blog-main {
-    background-color: var(--primary-light-alt);
+    background-color: var(--secondary-light);
 }
 
 .blog-card-inner-wrap {
     border-radius: 8px;
-    background-color: var(--primary-very-light);
+    background-color: var(--secondary-very-light);
 }
 
 .blog-card-left-section {
     border-top-left-radius: 8px;
-    border-right-color: var(--primary-light-alt);
+    border-right-color: var(--secondary-light);
     border-bottom-left-radius: 8px;
-    background-color: var(--primary-light);
+    background-color: var(--secondary-pale);
 }
 
 .intro-img img {
-    border-color: var(--primary-color);
+    border-color: var(--secondary-color);
     border-radius: 12px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .intro-text-box p:nth-child(3) {  /* description */
@@ -336,11 +346,11 @@ footer a:hover {
 }
 
 .intro-read-more { /* button */
-    border-color: var(--primary-light-alt);
+    border-color: var(--secondary-light);
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
     color: var(--copy-dark);
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-pale);
     transition: background-color .1s ease-out;
 }
 
@@ -352,7 +362,7 @@ footer a:hover {
 /* || Blog Post */
 
 .slice-link p {
-    border-left-color: var(--secondary-dark);
+    border-left-color: var(--secondary-color);
 }
 
 .slice-quote {
@@ -373,9 +383,9 @@ footer a:hover {
 }
 
 .slice-gallery {
-    border-top-color: var(--primary-light-alt);
-    border-bottom-color: var(--primary-light-alt);
-    background-color: var(--primary-light);
+    border-top-color: var(--primary-light);
+    border-bottom-color: var(--primary-light);
+    background-color: var(--primary-pale);
 }
 
 .post-gallery-img {
@@ -389,9 +399,9 @@ footer a:hover {
 }
 
 .post-return {
-    border-color: var(--primary-light-alt);
+    border-color: var(--primary-light);
     border-radius: 12px;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-light);
     transition: background-color .3s;
 }
 
@@ -465,10 +475,10 @@ footer a:hover {
 }
 
 .hidden-button {
-    border-color: var(--primary-light-alt);
+    border-color: var(--primary-light);
     border-radius: 12px;
     color: var(--copy-dark);
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-light);
     transition: background-color .1s ease-out;
 }
 
@@ -480,7 +490,7 @@ footer a:hover {
 /* || Contact Form  */
 
 .card--contact-form {
-    background-color: var(--primary-light-alt);
+    background-color: var(--primary-light);
 }
 
 .contact-card-inner-wrap {
@@ -491,8 +501,8 @@ footer a:hover {
 .contact-card-top-section {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-bottom-color: var(--primary-light-alt);
-    background-color: var(--primary-light);
+    border-bottom-color: var(--primary-light);
+    background-color: var(--primary-pale);
 }
 
 input:focus {
@@ -508,20 +518,20 @@ textarea:focus {
 }
 
 .form-entry {
-    border-color: var(--primary-light-alt);
+    border-color: var(--primary-light);
     color: var(--copy-mid);
 }
 
 .form-textarea {
-    border-color: var(--primary-light-alt);
+    border-color: var(--primary-light);
 }
 
 .contact-submit {
-    border-color: var(--primary-light-alt);
+    border-color: var(--primary-light);
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
     color: var(--copy-dark);
-    background-color: var(--secondary-light);
+    background-color: var(--secondary-very-light);
     transition: background-color .1s ease-out;
 }
 

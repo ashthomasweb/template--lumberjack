@@ -58,9 +58,9 @@ app.get('/about', function (req, res) {
     });
 });
 
-app.get('/services', function (req, res) {
-    res.render('services', {
-        pageTitle: "Services",
+app.get('/technology', function (req, res) {
+    res.render('technology', {
+        pageTitle: "Technology",
     });
 });
 
