@@ -7,7 +7,7 @@ const ejs = require('ejs');
 const favicon = require('express-favicon');
 var Prismic = require('prismic-javascript');
 var PrismicDOM = require('prismic-dom');
-var prismicEndpoint = 'https://looseleashdog.prismic.io/api/v2';
+var prismicEndpoint = 'https://lumberjack.prismic.io/api/v2';
 
 const app = express();
 

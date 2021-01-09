@@ -1,0 +1,188 @@
+{
+    "Main" : {
+      "title" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1",
+          "label" : "Title",
+          "placeholder" : "Main Post Title: It can be about this long!"
+        }
+      },
+      "image" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : {
+            "width" : 1000,
+            "height" : 618
+          },
+          "thumbnails" : [ ],
+          "label" : "Image"
+        }
+      },
+      "description" : {
+        "type" : "StructuredText",
+        "config" : {
+          "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+          "label" : "Post description",
+          "placeholder" : "This is where you can write a description. You have 230 characters, try and use most of them as it will look best on the live site. Are you wondering how many characters two hundred and thirty is? Have no fear, My Dear, it's here"
+        }
+      },
+      "body" : {
+        "type" : "Slices",
+        "fieldset" : "Slice zone",
+        "config" : {
+          "labels" : {
+            "whitespace" : [ ]
+          },
+          "choices" : {
+            "body" : {
+              "type" : "Slice",
+              "fieldset" : "Body",
+              "description" : "Text area",
+              "icon" : "subject",
+              "display" : "list",
+              "non-repeat" : {
+                "paragraph" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "paragraph, strong, em, hyperlink, embed, list-item, o-list-item",
+                    "allowTargetBlank" : true,
+                    "label" : "Paragraph",
+                    "placeholder" : "Paste ONE paragraph per zone"
+                  }
+                }
+              },
+              "repeat" : { }
+            },
+            "heading" : {
+              "type" : "Slice",
+              "fieldset" : "Heading",
+              "description" : "Section Heading",
+              "icon" : "sort",
+              "display" : "list",
+              "non-repeat" : {
+                "heading" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "heading2",
+                    "label" : "Section Heading",
+                    "placeholder" : "Section heading"
+                  }
+                }
+              },
+              "repeat" : { }
+            },
+            "subheading" : {
+              "type" : "Slice",
+              "fieldset" : "Subheading",
+              "description" : "Subheading",
+              "icon" : "sort",
+              "display" : "list",
+              "non-repeat" : {
+                "subheading" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "heading3",
+                    "label" : "Subheading",
+                    "placeholder" : "Subheading"
+                  }
+                }
+              },
+              "repeat" : { }
+            },
+            "image_gallery" : {
+              "type" : "Slice",
+              "fieldset" : "Image Gallery",
+              "description" : "Image Gallery with a title and a caption for each image",
+              "icon" : "photo_library",
+              "non-repeat" : { },
+              "repeat" : {
+                "image_captions" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "paragraph",
+                    "label" : "Image captions",
+                    "placeholder" : "Image captions"
+                  }
+                },
+                "gallery_image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ ],
+                    "label" : "Gallery Image"
+                  }
+                }
+              }
+            },
+            "link" : {
+              "type" : "Slice",
+              "fieldset" : "Link",
+              "description" : "Short, centered text field with embeded link",
+              "icon" : "all_inclusive",
+              "display" : "list",
+              "non-repeat" : {
+                "link" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "paragraph, hyperlink",
+                    "allowTargetBlank" : true,
+                    "label" : "link",
+                    "placeholder" : "Write text to display here"
+                  }
+                }
+              },
+              "repeat" : { }
+            },
+            "quote_and_author" : {
+              "type" : "Slice",
+              "fieldset" : "Quote and author",
+              "description" : "A short quote with author's name",
+              "icon" : "format_quote",
+              "non-repeat" : {
+                "quote" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "em",
+                    "label" : "Quote",
+                    "placeholder" : "An awe inspiring quote!"
+                  }
+                },
+                "author" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "paragraph",
+                    "label" : "Name of the author",
+                    "placeholder" : "Write author's name here"
+                  }
+                }
+              },
+              "repeat" : { },
+              "display" : "list"
+            },
+            "whitespace" : {
+              "type" : "Slice",
+              "fieldset" : "Whitespace",
+              "description" : "Accepts positive and negative values",
+              "icon" : "view_day",
+              "display" : "list",
+              "non-repeat" : {
+                "margin" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "paragraph",
+                    "label" : "Margin",
+                    "placeholder" : "Enter margin-top / margin-bottom values as CSS. Eg. margin-top: 10px; or margin-bottom: -30px;"
+                  }
+                }
+              },
+              "repeat" : { }
+            }
+          }
+        }
+      }
+    }
+  }
