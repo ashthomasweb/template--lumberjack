@@ -208,7 +208,8 @@
 .greeting-img--services {
     z-index: 50;
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .greeting-img--services img {
@@ -330,6 +331,51 @@
 /* || Pages - Blog Main */
 
 .greeting-pane--blog {
+    position: relative;
+    max-width: 1000px;
+    height: 397px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.greeting-pane--blog h1 {
+    display: inline-block;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+.greeting-img--blog {
+    z-index: 50;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.greeting-img--blog img {
+    width: 1000px;
+}
+
+.greeting-text--blog {
+    z-index: 51;
+    position: relative;
+    top: 45px;
+    max-width: 700px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.greeting-text--blog p {
+    max-width: 600px;
+    margin: 15px auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Greeting pane with no background image */
+/* .greeting-pane--blog {
     max-width: 700px;
     padding: 20px 0;
     margin: 0 auto;
@@ -346,7 +392,8 @@
     margin: 15px auto 0px auto;
     font-size: 20px;
     line-height: 1.6;
-}
+} */
+/* END Greeting pane with no background image */
 
 .card--blog-main {
     position: relative;
