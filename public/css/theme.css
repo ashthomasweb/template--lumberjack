@@ -2,15 +2,15 @@
 
 :root {
     /* primary theme colors  */
-    --primary-color: #239d70;
-    --primary-light: #8adcb3;
-    --primary-pale: #c7e9de;
-    --primary-very-light: #edfffb;
+    --primary-color: #239d78;
+    --primary-light: #82ceb8;
+    --primary-pale: #d4eae3;
+    --primary-very-light: #f5fffd;
 
     /* secondary theme colors  */
     --secondary-color: #a58d7f; 
     --secondary-light: #c7b5ab; 
-    --secondary-pale: #d6cac3;
+    --secondary-pale: #d4c9c3;
     --secondary-very-light: #fffbf5;
 
     /* highlight color  */
@@ -399,14 +399,14 @@ footer a:hover {
 }
 
 .post-return {
-    border-color: var(--primary-light);
+    border-color: var(--primary-pale);
     border-radius: 12px;
-    background-color: var(--secondary-light);
+    background-color: var(--primary-pale);
     transition: background-color .3s;
 }
 
 .post-return:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
 }
 
 /* || Curator Carosel */
@@ -531,7 +531,7 @@ textarea:focus {
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
     color: var(--copy-dark);
-    background-color: var(--secondary-very-light);
+    background-color: var(--primary-light);
     transition: background-color .1s ease-out;
 }
 

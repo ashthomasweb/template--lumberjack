@@ -1,4 +1,4 @@
-// || Photo Page JS for "Looseleashdog"
+// || Media Page JS for "LumberJack"
 
 // || Curator carousel control buttons 
 

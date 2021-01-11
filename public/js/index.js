@@ -9,10 +9,10 @@ function formFieldCheck() {
     let elem = document.getElementById("contact-button");
 
     if (name == "" || email == "" || message == "") {
-        elem.style.backgroundColor = "var(--theme-lightgreen)";
+        elem.style.backgroundColor = "var(--primary-light)";
         elem.style.pointerEvents = "none";
     } else {
-        elem.style.backgroundColor = "var(--theme-blue)";
+        elem.style.backgroundColor = "var(--primary-very-light)";
         elem.style.pointerEvents = "auto";
     }
 }
@@ -170,9 +170,9 @@ function mouseHover(event) {
         if (item.className == "card card--blog-main") {
             parent = item;
             btn = parent.children[0].children[1].children[0].children[2];
-            btn.style.backgroundColor = "var(--theme-blue)";
+            btn.style.backgroundColor = "var(--primary-pale)";
             parent.addEventListener("mouseout", function () {
-                btn.style.backgroundColor = "var(--theme-green)";
+                btn.style.backgroundColor = "var(--secondary-pale)";
             })
         }
 

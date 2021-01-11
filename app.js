@@ -96,9 +96,9 @@ app.get('/posts/:postTitle', function (req, res) {
     });
 });
 
-app.get('/photos', function (req, res) {
-    res.render('photos', {
-        pageTitle: "Photos",
+app.get('/media', function (req, res) {
+    res.render('media', {
+        pageTitle: "Media",
     });
 });
 
