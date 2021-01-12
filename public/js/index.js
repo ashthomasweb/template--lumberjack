@@ -12,7 +12,7 @@ function formFieldCheck() {
         elem.style.backgroundColor = "var(--primary-light)";
         elem.style.pointerEvents = "none";
     } else {
-        elem.style.backgroundColor = "var(--primary-very-light)";
+        elem.style.backgroundColor = "var(--highlight)";
         elem.style.pointerEvents = "auto";
     }
 }

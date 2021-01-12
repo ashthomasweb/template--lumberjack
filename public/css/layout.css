@@ -171,6 +171,10 @@
     border: none;
 }
 
+.card-hr-secondary {
+    width: 60%;
+    height: 5px;
+}
 /* || Section Dividers */
 
 .l-divider {
