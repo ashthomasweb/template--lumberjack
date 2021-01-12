@@ -544,6 +544,93 @@
     line-height: 1.6;
 }
 
+
+.card-pane--media {
+    z-index: 52;
+    position: relative;
+    margin: -100px auto;
+    text-align: center;
+}
+
+.card--media-left {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 282px;
+    margin: 0 30px;
+    padding: 4px;
+}
+
+.card--media-right {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 282px;
+    margin: 0px 30px;
+    padding: 4px;
+}
+
+.media-card-inner-wrap {
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 8px;
+}
+
+.media-card-top-section {
+    width: 100%;
+    height: 33%;
+    padding: 20px 30px;
+    border-bottom: 1px solid;
+}
+
+.media-card-bottom-section {
+    position: relative;
+    width: 100%;
+    height: 67%;
+    padding: 10px 0 14px;
+}
+
+.media-card-top-section h3 {
+    padding-top: 9px;
+    font-size: 26px;
+}
+
+.media-price {
+    font-size: 22px;
+}
+
+.dog-art {
+    height: 80px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: -5px 0 10px;
+}
+
+.card--media-innerleft {
+    float: left;
+    width: 118px;
+    margin: 9px 0px 10px 18px;
+    padding: 8px 8px 25px;
+    border: 1px solid;
+}
+
+.card--media-center {
+    width: 80%;
+    margin: 9px auto 10px auto;
+    padding: 8px 8px 25px;
+    /* border: 1px solid; */
+}
+
+.card--media-innerright {
+    float: right;
+    width: 118px;
+    margin: 9px 18px 10px 0;
+    padding: 8px 0px 25px;
+    border: 1px solid;
+}
+
 /* || Curator Carosel */
 
 .carousel--curator {

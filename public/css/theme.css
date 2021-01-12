@@ -205,7 +205,6 @@ footer a:hover {
     height: 5px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-
 }
 
 
@@ -230,7 +229,7 @@ footer a:hover {
 
 .h-menu-bar {
     border-radius: 1.5px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
 }
 
 .h-menu-box {
@@ -465,6 +464,37 @@ footer a:hover {
     border-color: var(--primary-color);
     border-radius: 12px;
     background-color: var(--primary-color);
+}
+
+
+.card--media-left {
+    background-color: var(--primary-light);
+}
+
+.card--media-right {
+    background-color: var(--primary-light);
+}
+
+.media-card-inner-wrap {
+    border-radius: 8px;
+    background-color: var(--primary-very-light);
+}
+
+.media-card-top-section {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-color: var(--primary-light);
+    background-color: var(--primary-pale);
+}
+
+.card--media-innerleft {
+    border-color: var(--primary-pale);
+    border-radius: 12px;
+}
+
+.card--media-innerright {
+    border-color: var(--primary-pale);
+    border-radius: 12px;
 }
 
 /* || Pages - Contact */

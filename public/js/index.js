@@ -149,10 +149,10 @@ function hamburger() {
 
     if (document.getElementById("h-menu-input").checked == true) {
         menuOpen();
-        document.getElementById("h-box").style.backgroundColor = "var(--theme-yellow)";
+        document.getElementById("h-box").style.backgroundColor = "var(--highlight)";
     } else {
         menuClose();
-        document.getElementById("h-box").style.backgroundColor = "var(--theme-lightblue)";
+        document.getElementById("h-box").style.backgroundColor = "var(--primary-pale)";
     }
 
 }
