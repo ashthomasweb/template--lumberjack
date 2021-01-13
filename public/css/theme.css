@@ -161,8 +161,9 @@ footer a:hover {
 }
 
 .l-body-wrapper--contact {
-    background: url(/images/contact-background7.png);
+    background: url(/images/mountain-scene-contact.png);
     background-size: cover;
+    background-position-x: center;
 }
 
 .l-content-wrapper--contact {
