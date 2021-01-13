@@ -220,10 +220,10 @@ function footerShare() {
 
     if (shareBool == true ) {
         shareOpen();
-        menuButton.style.backgroundColor = "var(--theme-yellow)";
+        menuButton.style.backgroundColor = "var(--primary-color)";
     } else {
         shareClose();
-        menuButton.style.backgroundColor = "var(--theme-lightblue)";
+        menuButton.style.backgroundColor = "var(--secondary-light)";
     }
 
 }

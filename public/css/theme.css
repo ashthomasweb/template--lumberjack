@@ -581,9 +581,12 @@ textarea:focus {
 
 .footer-social button {
     cursor: pointer;
-    border-radius: 12px;
-    border: none;
+    border-radius: 17px;
+    border: 5px solid var(--borders);
     background: url(/images/icons/share.png);
+    background-color: var(--secondary-light);
+    background-size: contain;
+    transition: background-color .3s;
 }
 
 .footer-attributions {
