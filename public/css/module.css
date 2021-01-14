@@ -502,6 +502,7 @@
     font-family: phoreuscherokee, serif;
     font-size: 18px;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* || Pages - Photos */
@@ -634,7 +635,7 @@
 
 .carousel--curator {
     width: 1000px;
-    height: 312px;
+    height: 320px;
     margin: 0 auto 0px;
 }
 
@@ -663,9 +664,9 @@
     width: 42px;
     height: 312px;
     border: 0;
-    background-image: url("/images/left-arrow.png");
+    background-image: url("/images/icons/left-arrow.png");
     background-repeat: no-repeat;
-    background-position: 13px 138px;
+    background-position: 11px 138px;
 }
 
 .crt-post-footer {
@@ -712,8 +713,8 @@
     width: 42px;
     height: 312px;
     border: 0;
-    background-image: url("/images/right-arrow.png");
-    background-position: 13px 138px;
+    background-image: url("/images/icons/right-arrow.png");
+    background-position: 11px 138px;
     background-repeat: no-repeat;
 }
 
@@ -829,8 +830,9 @@
     border: 4px solid;
     margin: 0 auto;
     font-family: phoreuscherokee, serif;
-    font-size: 36px;
+    font-size: 39px;
     font-weight: 700;
+    letter-spacing: 1px;
     pointer-events: none;
 }
 

@@ -11,9 +11,12 @@ function formFieldCheck() {
     if (name == "" || email == "" || message == "") {
         elem.style.backgroundColor = "var(--primary-light)";
         elem.style.pointerEvents = "none";
+        elem.style.color = "var(--copy-dark)";
+
     } else {
-        elem.style.backgroundColor = "var(--highlight)";
+        elem.style.backgroundColor = "var(--primary-color)";
         elem.style.pointerEvents = "auto";
+        elem.style.color = "var(--highlight)";
     }
 }
 
@@ -170,9 +173,11 @@ function mouseHover(event) {
         if (item.className == "card card--blog-main") {
             parent = item;
             btn = parent.children[0].children[1].children[0].children[2];
-            btn.style.backgroundColor = "var(--primary-pale)";
+            btn.style.backgroundColor = "var(--secondary-color)";
+            btn.style.color = "white";
             parent.addEventListener("mouseout", function () {
                 btn.style.backgroundColor = "var(--secondary-pale)";
+                btn.style.color = "var(--copy-dark)";
             })
         }
 

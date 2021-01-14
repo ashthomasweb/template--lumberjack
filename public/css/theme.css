@@ -8,7 +8,7 @@
     --primary-very-light: #f5fffd;
 
     /* secondary theme colors  */
-    --secondary-color: #a58d7f; 
+    --secondary-color: #98887f; 
     --secondary-light: #c7b5ab; 
     --secondary-pale: #d4c9c3;
     --secondary-very-light: #fffbf5;
@@ -158,6 +158,7 @@ footer a:hover {
 .l-content-wrapper {
     box-shadow: 0px 0px 8px var(--shadow);
     background-color: var(--primary-background);
+    overflow: hidden;
 }
 
 .l-body-wrapper--contact {
@@ -353,9 +354,10 @@ footer a:hover {
     border-color: var(--secondary-light);
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    margin-bottom: 2px;
     color: var(--copy-dark);
     background-color: var(--secondary-pale);
-    transition: background-color .1s ease-out;
+    transition: background-color .2s ease-out, color .2s ease-out;
 }
 
 .intro-read-more:hover {
@@ -417,6 +419,8 @@ footer a:hover {
 
 .carousel--curator {
     background-color: var(--primary-color);
+    border-top: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
 }
 
 .left-button-center {
@@ -424,7 +428,9 @@ footer a:hover {
 }
 
 .left-button-center button {
-    background-color: var(--clear);
+    background-color: var(--primary-light);
+    border-left: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
     cursor: pointer;
     opacity: 0.2;
     transition: opacity .3s;
@@ -443,7 +449,9 @@ footer a:hover {
 }
 
 .right-button-center button {
-    background-color: var(--clear);
+    background-color: var(--primary-light);
+    border-left: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
     cursor: pointer;
     opacity: 0.2;
     transition: opacity .3s;
@@ -567,7 +575,7 @@ textarea:focus {
     border-bottom-left-radius: 12px;
     color: var(--copy-dark);
     background-color: var(--primary-light);
-    transition: background-color .1s ease-out;
+    transition: background-color .2s ease-out, color .2s ease-out;
 }
 
 .contact-submit:hover {
@@ -591,7 +599,7 @@ textarea:focus {
 }
 
 .footer-attributions {
-    color: var(--copy-light);
+    color: var(--copy-dark);
 }
 
 .footer-goodbye {

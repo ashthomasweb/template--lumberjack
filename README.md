@@ -43,7 +43,8 @@ To-do list:
 * 
 
 ## Known Issues
-* Incomplete.
+* Instagram slider needs a js position helper function. Fast-clicking results in partial photo's being displayed.
+* "Card" element's border radius has display errors allowing the background-color of the inner element to show through.
 
 ## Status
 Project is: _in progress_.
