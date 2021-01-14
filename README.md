@@ -14,7 +14,7 @@
 * [Contact](#contact)
 
 ## General info
-This template is greate for a local business taking their products or services to the web. Artisans and private businesses need a way to integrate social media, ongoing public interest, and a strong brand sense. LumberJack provides a quick setup for even a beginner front-end dev. If you already have brand images, colors, copy, and social accounts, you can expect to have the site fully running and styled in one day. If you are starting from scratch and need to generate images, copy, accounts, and a brand sense, expect 1 - 2 weeks for full deployment.
+This template is great for a local business taking their products or services to the web. Artisans and private businesses need a way to integrate social media, ongoing public interest, and a strong brand sense. LumberJack provides a quick setup for even a beginner front-end dev. If you already have brand images, colors, copy, and social accounts, you can expect to have the site fully running and styled in one day. If you are starting from scratch and need to generate images, copy, accounts, and a brand sense, expect 1 - 2 weeks for full deployment.
 
 ## Screenshots
 ![Example screenshot](.images/img/screenshot.png)
@@ -34,9 +34,9 @@ This template is greate for a local business taking their products or services t
 
 ## Features
 List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Fully mobile ready
+* Scalable architecture
+* 
 
 To-do list:
 * Implement blog post pagination and sorting.
