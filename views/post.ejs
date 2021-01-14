@@ -3,10 +3,10 @@
 <%- include("../views/partials/header.ejs") -%>
 
 <% document.forEach(function(post) { %>
-  <% if ( title === post.data.title[0].text.replace(/\?/g, "").replace(/\'/g, "").replace(/\,/g, "").replace(/\!/g, "").replace(/-/g, ' ') ) { %>
+  <% if ( title === post.data.title[0].text.replace(/\?/g, "").replace(/\'/g, "").replace(/\,/g, "").replace(/\!/g, "").replace(/\?/g, "").replace(/\./g, "").replace(/\//g, "").replace(/\"/g, "").replace(/-/g, ' ') ) { %>
 
     <div class="post-main-img">
-      <img src="<%= post.data.image.url %>">
+      <img src="<%= post.data.image.url.replace("auto=compress,format", "") %>">
     </div>
 
     <div class="post-title">
@@ -59,7 +59,7 @@
             <div class="post-gallery">
               <% slice.items.forEach(function(image) { %>
                 <div class="gallery-content-frame">
-                  <img class="post-gallery-img" src="<%= image.gallery_image.url %>"/>
+                  <img class="post-gallery-img" src="<%= image.gallery_image.url.replace("auto=compress,format", "") %>"/>
                   <p class="post-gallery-caption"><%= image.image_captions[0].text %></p>
                 </div>
               <% }) %>
