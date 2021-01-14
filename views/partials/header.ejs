@@ -32,14 +32,14 @@
         <script type="text/javascript">
             (function () {
                 // find user info at https://dashboard.emailjs.com/admin/integration
-                emailjs.init('user_i2jhWUzjMEJrRku3U92ZB');
+                emailjs.init("user_NvShpApHVaBxjd6tUjG0L");
             })();
         </script>
         <script type="text/javascript">
             window.onload = function () {
                 document.getElementById('contact-form').addEventListener('submit', function (event) {
                     event.preventDefault();
-                    emailjs.sendForm('service_znjcbmt', 'contact_form', this);
+                    emailjs.sendForm('service_99j793b', 'contact_form', this);
                     document.getElementById("hidden-response").style.display = "block";
                     document.getElementById("contact-form").style.display = "none";
                 });
