@@ -1,3 +1,17 @@
+// EmailJS Temp
+// document.getElementById("hidden-response").style.display = "block";
+// document.getElementById("contact-form").style.display = "none";
+
+
+
+
+
+
+
+
+
+
+
 // THIS IS ONE WEEK OF WORK THAT WILL PROBABLY STAY IN THE DARK
 
 
@@ -6,7 +20,7 @@
 // function juicerFeed() {
 
 //     setTimeout(function () {
-      
+
 //         // || Text post error hide
 //         let x = document.getElementsByClassName("j-stack");
 //         // console.log(x[0].children);
@@ -141,7 +155,7 @@
 // function jrSlider() {
 //     let image = document.getElementById("junior-image");
 //     let imagesArray = ["./images/pluto.jpg", "./images/cincy.jpg", "./images/junior.jpg", "./images/rosie.jpg"];
-    
+
 //     image.addEventListener("mouseover", hoverPhotoChange);
 //     image.addEventListener("mouseout", hoverOff);
 
