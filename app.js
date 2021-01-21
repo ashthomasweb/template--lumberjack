@@ -1,6 +1,7 @@
 // Node.js/Express Server "app.js" for "Looseleashdog" 
 
 // Dependencies
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -24,7 +25,7 @@ var linkResolver = function (doc) {
     if (doc.type === 'page') return "/" + doc.uid;
     // Fallback for other types, in case new custom types get created
     return "/";
-}
+};
 
 // Middleware to inject prismic context
 app.use(function (req, res, next) {
@@ -41,7 +42,7 @@ function initApi(req) {
     return Prismic.getApi(prismicEndpoint, {
         req: req
     });
-}
+};
 // END Prismic
 
 // Route Handlers
@@ -105,7 +106,40 @@ app.get('/media', function (req, res) {
 app.get('/contact', function (req, res) {
     res.render('contact', {
         pageTitle: "Contact",
+        responseBool: false,
     });
+});
+
+app.post('/contact', function (req, res) {
+
+    let ifError = false;
+
+    const { user_name, user_email, message } = req.body;
+
+    module.exports = { user_email, user_name, message };
+
+    const { transporter, inquiry, finalConfirm } = require('./nodemailer.js');
+
+    var userInquiry = transporter.sendMail(inquiry);
+
+    var userConfirm = transporter.sendMail(finalConfirm);
+
+    Promise.all([userInquiry, userConfirm])
+        .then(([resultInq, resultConf]) => {
+            console.log("Emails sent", resultInq, resultConf);
+        })
+        .catch((err) => {
+            console.log(err);
+            ifError = true;
+        })
+        .finally(() => {
+            res.render('contact', {
+                pageTitle: "Contact",
+                responseBool: true,
+                isError: ifError,
+            });
+        });
+
 });
 
 // || Listener 
