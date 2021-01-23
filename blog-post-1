@@ -1,0 +1,35 @@
+A couple things about setting up with Prismic. Once you go through the sign up process and log in you will need to
+create a new repository. A repository is a place where you will store all of the post content be it copy that you have
+written, images, and other media. Click the green "Create Repository" button. Fill in the fields and select your role
+and the technology that you will be using to display the content. You have the option of upgrading to a paid-tier with
+support for multiple users and more bandwidth. Once you have a new repo created, click on it to begin populating the
+blog. You will be asked to select the primary language, and then to create a custom type. "Type" is what Prismic uses to
+refer to a repeatable template that you can use for a pages or posts. LumberJack only uses Prismic for it's blog posts.
+Click on "Create customm type", then click "Repeatable Type", and enter "post", without quotes, as the custom type name.
+the API name will automatically fill in, leave it as is. The next screen is where you are going to copy in the data from
+the supplied "/prismicJSON.json" file that is in the site's root directory. In the Prismic window, in the right-hand
+column, click "JSON editor". Simply copy eveything in the "/prismicJSON.json" file, delete everything in the Prismic
+JSON editor, and paste the contents of "/prismicJSON.json" into the Prismic JSON editor. Click Save. You should now have
+the template that is used in the "/public/views/post.ejs" file, and the main blog feed. If you want to create a new
+custom type in Prismic, or modify the custom type in the supplied post type, you will need to appropriately edit the
+markup on your own. In order to find the data to destructure, first make your new custom type and create a new document
+using this type that uses at least one of every repeatable item. This is important, you will not be able to use the API
+browser to destructure without first creating a new document with every option you selected. Once complete, and then
+from the main repository screen click the settings gear in the lower left corner, then "API & Security", then under "API
+brower" follow the link. You will be taken to a new window, simply click "Search Documents" at the bottom, and you can
+then access the content via HTML or pure JSON for destructuring. If you are using the supplied post template, simply
+click the green pencil icon near the top-right of the documents window in your repository. If you have more than one
+custom type, select "post". This template has a main image, title, and description that must be filled out on every
+post, or the post will not load. Below that are buttons that generate repeatable zones for text, headings, or other
+content. You can use as many or as few of these in each post as you like. Make sure to fill out all the fields in the
+image gallery and quotes, or the post will not display. There is a whitespace option that allows you to enter CSS margin
+values in as native code without brackets to adjust your content. By default all heading elements will sit closer to
+paragraph elements than others. Use the whitespace zone to change this to your liking. There are basic instructions
+built into the fields to follow, such as pasting just one paragraph into a repeatable zone at a time, or character
+length limits. This is a function of how LumberJack's default post template is written, you can use your own parameters
+if you are writing your own custom type.
+
+TLDR; Don't forget to copy the file in the root directory into the prismic JSON editor. If you decide to make changes to the
+prismic content-type, you will need to update the appropriate EJS tags in /public/views/post.ejs. If you create a new
+content-type, you will need to create new markup in post.ejs or a new file. Prismic's API endpoint is straightforward,
+just make sure you take note of what you are naming your custom types, or use the API endpoint in your account settings.

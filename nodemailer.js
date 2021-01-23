@@ -2,7 +2,11 @@
 
 // Dependencies
 const nodemailer = require("nodemailer");
-const { user_name, user_email, message, } = require('./app.js');
+const {
+    user_name,
+    user_email,
+    message,
+} = require('./app.js');
 
 // Mailer transport object 
 var transporter = nodemailer.createTransport({
@@ -18,7 +22,9 @@ var transporter = nodemailer.createTransport({
 // Templates
 function inquiryTemplate() {
 
-    // Do not remove backtick
+    // Do not remove backtick. Only edit HTML markup below. Be mindful of the objects with ${this} syntax, they are data values 
+    // coming from the form and must not be changed. Stick to single quotes, only use inline CSS styles.
+
     let inqTemplate = `
 
     <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>
@@ -40,7 +46,9 @@ function inquiryTemplate() {
 
 function confirmTemplate() {
 
-    // Do not remove backtick
+    // Do not remove backtick. Only edit HTML markup below. Be mindful of the objects with ${this} syntax, they are data values coming 
+    // from the form and must not be changed. Stick to single quotes, only use inline CSS styles.
+
     let confTemplate = `
 
     <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>   
@@ -58,8 +66,40 @@ function confirmTemplate() {
     `; // Do not remove backtick
 
     let output = confTemplate.replace(/\n/g, "").replace(/\r/g, "<br>");
-    return output;  
+    return output;
 };
+
+/* // New Email Template
+
+function newTemplate() {
+    // This is a new email template for you to use. Simply uncomment the template, email object, and parse lines of code associated 
+    // with "newTemplate", and add the parsed object to the exports and the bottom. Head over to your "/app.js" and look for the comment 
+    // in the /post request labeled, "Start New Template Data Here". Follow the directions.
+
+    // Do not remove backtick. Only edit HTML markup below. Be mindful of the objects with ${this} syntax, they are data values coming 
+    // from the form and must not be changed. Stick to single quotes, only use inline CSS styles.
+
+    let newTemplate = `
+
+    <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>
+        <h2>Hello, this is a new template for you to use.</h2>
+            <p>Below is a copy of the email.</p> 
+        <h2>From:</h2>
+            <p style='padding: 0 30px;'><strong>${user_name}</strong></p>
+        <h2>Email:</h2>
+            <p style='padding: 0 30px;'>${user_email}</p>
+        <h2>Message:</h2>
+            <p style='padding: 0 30px;'>${message}</p>
+    </div>
+    
+    `; // Do not remove backtick
+
+    let output = newTemplate.replace(/\n/g, "").replace(/\r/g, "<br>");
+    return output;
+};
+
+*/
+
 
 // Nodemailer email objects
 function mailNewInquiry(user_name, user_email, message) {
@@ -76,15 +116,27 @@ function mailConfirmation(user_name, user_email, message) {
     "html": "${confirmTemplate()}"}`;
 };
 
+/*
+function newEmailTemp(user_name, user_email, message) {
+    return `{"from": "mailer@lumberjack.rideoutweb.com",
+    "to": "${user_email}",
+    "subject": "This is your email confirmation from LumberJack!",
+    "html": "${newTemplate()}"}`;
+};
+*/
+
 // Object parsing
 let inquiry = JSON.parse(mailNewInquiry(user_name, user_email, message));
 let finalConfirm = JSON.parse(mailConfirmation(user_name, user_email, message));
+// let newEmailTemplate = JSON.parse(newEmailTemp(user_name, user_email, message));
+
 
 // Exports
 module.exports = {
     transporter,
     inquiry,
     finalConfirm,
+    // newEmailTemplate,
 };
 
 // END of document

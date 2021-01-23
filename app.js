@@ -118,11 +118,24 @@ app.post('/contact', function (req, res) {
 
     module.exports = { user_email, user_name, message };
 
+    // ** LumberJack Instructions **
+    // "Start New Template Data Here"
+    // After "finalConfirm" below, add in the new export from "/nodemailer.js", and uncomment transporter object for newEmail Template
     const { transporter, inquiry, finalConfirm } = require('./nodemailer.js');
 
     var userInquiry = transporter.sendMail(inquiry);
-
     var userConfirm = transporter.sendMail(finalConfirm);
+    // var newEmail = transporter.sendMail(newEmailTemplate);
+
+    // Populate the above new var into the Promise below, and add results to the console.log.
+    // Example below:
+
+    /*
+    Promise.all([userInquiry, userConfirm, newEmail])
+        .then(([resultInq, resultConf, resultNew]) => {
+            console.log("Emails sent", resultInq, resultConf, resultNew);
+        }) 
+    */
 
     Promise.all([userInquiry, userConfirm])
         .then(([resultInq, resultConf]) => {
