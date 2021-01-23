@@ -1,10 +1,26 @@
 If you haven't used NodeMailer before, don't worry, even though you will be editing some things on the back-end of the
-site it's straight-forward, and that's what version control is for anyway. You are using it right? LumberJack ships
+site it's straight-forward, and that's what version control is for anyway. 
+
+You will need to
+place your environment variables in the .env file located in the root directory. Once hosted, you will provide your host
+with the same values. Most hosts have a dedicated section for doing so, or they can be placed in your .htaccess file, or
+assigned through cPanel. Check with your hoster for specifics. 
+
+LumberJack ships
 setup to automatically send 2 emails through SMTP, one to the person in charge of inquirys for your business, and one
 confirmation email to the person who made the request. You can send as many emails out per each request as you want,
 however, if you are sending more than 2 you will need to make some small changes in the "/app.js" file as well as the
-"/nodemailer.js" file. If you are sticking with the two automatic emails, one to you, one to the client, then all you
+"/nodemailer.js" file. 
+
+If you are sticking with the two automatic emails, one to you, one to the client, then all you
 need to do is open up "/nodemailer.js". In the "Mailer transport object" you will need to supply your own email host
-information. Nodemailer works well with google OAuth as long as your host allows for external SMTP email services. In
+information. Nodemailer works well with google OAuth as long as your host allows for external SMTP email services. 
+
+In
 the "Templates" section, you will find the two templates currently in use and a commented out template you can use as an
 example to generate more emails. You will find detailed instruction in the appropriate places in the code file. 
+
+The
+error handler doesn't handle email server problems, only errors within the nodemailer function. Make sure to test your
+setup to ensure that your host does not block external SMTP connections, and that it isn't being caught by a spam
+filter. Sometimes running a lot of tests can trigger an automatic filter.

@@ -1,0 +1,27 @@
+Let's get you setup with Curator. Head on over to Curator.io and sign up for a new account. 
+
+Once you are in your
+dashboard, you will be asked to select the social media site you want to pull content from. Follow the prompts to pull
+content from the appropriate channel or feed. 
+
+Once you have, Curator calls it a "Source". When you pick your first
+source it will automatically take you to the "Curate" tab, where you can decide which posts will be included in your
+feed. 
+
+Once satisfied with your choices, you have some styling options. 
+
+If you are using Instagram, and want the Curator
+feed to appear in the LumberJack style, you need to set the feed style in the following manner. The "Feed Style" needs
+to be set to "Grid - Sydney". Under the "Feed" tab, end "1" in for "Rows", and "310" for "Min post width". 
+
+That's it!
+Click "Save", then "Publish Feed". A popup will appear, all you need to do is copy the line of code that starts with
+"i.src = "https://cdn.curator.io.....". Copy that entire line and replace the corresponding line in your
+"/views/public/partials/footer.ejs" file. 
+
+If you renamed your default feed, you will also have to rename the appropriate
+element id in "/public/media.ejs". Look for the **LumberJack Instruction** comment. 
+
+If you are putting feeds other than
+instagram on your site you will need to copy that feed code and make a second entry in your
+"/views/public/partials/footer.ejs", and also place the feed HTML where you want the feed to appear.
