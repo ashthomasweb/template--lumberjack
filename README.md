@@ -44,7 +44,8 @@ To-do list:
 
 ## Known Issues
 * Instagram slider needs a js position helper function. Fast-clicking results in partial photo's being displayed.
-* "Card" element's border radius has display errors allowing the background-color of the inner element to show through.
+* "Card" element's border radius has display errors allowing the background-color of the inner element to show through. FIXED
+* event.path is not supported in Firefox, Edge, or IE. However, the main blog intro uses event.path to find parent elements and apply hover effect on mouseover of entire element.
 
 ## Status
 Project is: _in progress_.

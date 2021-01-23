@@ -264,6 +264,7 @@ footer a:hover {
 .card--home {
     background-color: var(--primary-light);
     transition: background-color .1s linear;
+    
 }
 
 .card--home:hover {
@@ -273,6 +274,7 @@ footer a:hover {
 .home-card-inner-wrap {
     border-radius: 10px;
     background-color: var(--primary-very-light);
+    background: linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
 }
 
 .home-card-top-section {
@@ -303,6 +305,8 @@ footer a:hover {
 .services-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--secondary-very-light);
+    background: linear-gradient(to bottom, var(--secondary-light), var(--secondary-very-light) 4%);
+
 }
 
 .services-card-top-section {
@@ -331,6 +335,7 @@ footer a:hover {
 .blog-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--secondary-very-light);
+    background: linear-gradient(to right, var(--secondary-light), transparent 5%), linear-gradient(to left top, var(--secondary-light), var(--secondary-very-light) 3%);
 }
 
 .blog-card-left-section {
@@ -360,8 +365,10 @@ footer a:hover {
     transition: background-color .2s ease-out, color .2s ease-out;
 }
 
+/* This class is for firefox and Edge/IE backup. Chrome uses event.path to change color when hovering over the parent element. */
 .intro-read-more:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
     cursor: pointer;
 }
 
@@ -395,9 +402,9 @@ footer a:hover {
 }
 
 .post-gallery-img {
-    border-color: var(--primary-color);
+    border-color: var(--primary-light);
     border-radius: 12px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-light);
 }
 
 .post-gallery-caption {
@@ -491,6 +498,8 @@ footer a:hover {
 .media-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--primary-very-light);
+    background: linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
+
 }
 
 .media-card-top-section {
@@ -539,6 +548,8 @@ footer a:hover {
 .contact-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--primary-very-light);
+    background: linear-gradient(to bottom, var(--primary-light), var(--primary-very-light) 5%);
+
 }
 
 .contact-card-top-section {

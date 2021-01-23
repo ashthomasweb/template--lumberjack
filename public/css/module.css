@@ -274,7 +274,7 @@
     position: relative;
     width: 100%;
     height: 67%;
-    padding: 10px 0 14px;
+    padding: 12px 0;
 }
 
 .services-card-top-section h3 {
@@ -497,12 +497,17 @@
     right: -5px;
     float: right;
     width: 130px;
-    height: 45px;
+    height: 40px;
     border: 4px solid;
     font-family: phoreuscherokee, serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+.btn-text-offset {
+    position: relative;
+    top: -1px;
 }
 
 /* || Pages - Photos */
@@ -730,8 +735,9 @@
     scroll-behavior: smooth;
 }
 
+/* Adjust inner-frame width to change the number of posts displayed in your instagram feed. Each post is 310px. Must be a multiple of 310. Currently set to display 9 images. */
 .inner-frame {
-    width: 3100px;
+    width: 2790px;
     height: 310px;
 }
 

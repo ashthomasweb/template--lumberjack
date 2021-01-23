@@ -43,8 +43,8 @@
                 <h2><%=post.data.title[0].text%></h2>
                 <p class="description"><%=post.data.description[0].text.slice(0, 230)%></p>
                 <button class="intro-read-more" type="button"
-                    onclick="location.href='./posts/<%=post.data.title[0].text.replace(/ /g, "-").replace(/\'/g, "").replace(/\,/g, "").replace(/\!/g, "").replace(/\?/g, "").replace(/\./g, "").replace(/\//g, "").replace(/\"/g, "") %>' ">Read
-                    More</button>
+                    onclick="location.href='./posts/<%=post.data.title[0].text.replace(/ /g, "-").replace(/\'/g, "").replace(/\,/g, "").replace(/\!/g, "").replace(/\?/g, "").replace(/\./g, "").replace(/\//g, "").replace(/\"/g, "") %>' "><span class="btn-text-offset">Read
+                    More</span></button>
             </div>
         </div>
 
