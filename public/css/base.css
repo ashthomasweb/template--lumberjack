@@ -6,17 +6,21 @@
 
 body {
     overflow-y: scroll;
-    font-family: iskra, sans-serif;
+    font-family: var(--copy);
     font-weight: 300;
     font-style: normal;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: phoreuscherokee, serif;
+    font-family: var(--headers);
     font-style: normal;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+}
+
+h1, h2 {
+    letter-spacing: 2px;
 }
 
 button:focus {

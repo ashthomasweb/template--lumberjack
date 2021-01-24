@@ -167,8 +167,9 @@
     border: 4px solid;
     font-size: 22px;
     font-weight: 700;
-    font-family: phoreuscherokee, sans-serif;
+    font-family: var(--headers);
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
 
