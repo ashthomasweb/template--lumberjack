@@ -40,7 +40,9 @@ List of features ready and TODOs for future development
 
 To-do list:
 * Implement blog post pagination and sorting.
-* 
+* Pass error handling to frontend and output to console.
+* Blog pagination, date sort
+
 
 ## Known Issues
 * Instagram slider needs a js position helper function. Fast-clicking results in partial photo's being displayed.
