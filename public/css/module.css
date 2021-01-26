@@ -481,7 +481,7 @@
 .intro-text-box p:nth-child(2) { /* description */
     z-index: 1;
     position: absolute;
-    top: 78px;
+    top: 76px;
     max-height: 88px;
     padding: 0 25px;
     margin: 8px auto;
