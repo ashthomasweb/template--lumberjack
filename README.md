@@ -41,7 +41,9 @@ To-do list:
 * Implement blog post pagination and sorting.
 * Pass error handling to frontend and output to console.
 * Blog pagination, date sorting.
-
+* Generate font and pattern options.
+* Style ShareThis buttons.
+* Make spacing between share menu and page content dynamic
 
 ## Known Issues
 * Instagram slider needs a js position helper function. Fast-clicking results in partial photo's being displayed.
@@ -52,7 +54,7 @@ To-do list:
 Project is: _in development_.
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+Add here credits. Project inspired by a client project that was built for scalability and modularity.
 
 ## Contact
 Created by Ash Thomas (https://www.ashthomasweb.com/) - feel free to contact me!

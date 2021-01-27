@@ -64,17 +64,18 @@ h6 {
 a {
     padding-bottom: 1px;
     border-bottom: 4px solid var(--clear);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 p a {
+    font-weight: 700;
     border-bottom: 4px solid var(--clear);
     transition: border-bottom .6s;
 }
 
 p a:hover {
-    border-bottom: 4px solid var(--secondary-color);
+    border-bottom: 4px solid var(--primary-color);
 }
 
 footer a {
@@ -379,7 +380,11 @@ footer a:hover {
 /* || Blog Post */
 
 .slice-link p {
-    border-left-color: var(--secondary-color);
+    border-left-color: var(--primary-color);
+}
+
+.slice-link a {
+    font-weight: 300;
 }
 
 .slice-quote {
@@ -621,5 +626,10 @@ textarea:focus {
     color: var(--copy-mid);
 }
 
+/* || ShareThis */
+
+.st-label {
+    font-weight: 700 !important;
+}
 
 /* || END of document  */
