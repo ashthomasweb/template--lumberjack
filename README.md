@@ -36,6 +36,9 @@ This template is great for a local business taking their products or services to
 List of features ready and TODOs for future development
 * Fully mobile ready
 * SMACCS Scalable architecture
+* Multi-network social media aggregator
+* Headless content management system.
+* Secure automatic email responder.
 
 To-do list:
 * Implement blog post pagination and sorting.
