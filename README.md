@@ -3,6 +3,7 @@
 
 ## Table of contents
 * [General info](#general-info)
+* [Documentation](#documentation)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [API](#api)
@@ -49,11 +50,10 @@ To-do list:
 * Blog pagination, date sorting.
 * Generate font and pattern options.
 * Style ShareThis buttons.
-* Make spacing between share menu and page content dynamic
+* Make spacing between share menu and page content dynamic.
 
 ## Known Issues
 * Instagram slider needs a js position helper function. Fast-clicking results in partial photo's being displayed.
-* "Card" element's border radius has display errors allowing the background-color of the inner element to show through. FIXED
 * Browser issue: event.path is not supported in Firefox, Edge, or IE. However, the main blog intro uses event.path to find parent elements and apply hover effect on mouseover of entire element.
 
 ## Status
