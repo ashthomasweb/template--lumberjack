@@ -1,12 +1,31 @@
-This is a text-only version of LumberJack's documentation. Head to www.lumberjack.ashthomasweb.com/blog for styled version.
+# Project Name
+> LumberJack setup documentation. This is a text-only version, head to (www.lumberjack.ashthomasweb.com/blog) for styled version.
 
-_______
-WELCOME
+
+## Table of contents
+* [Welcome](#welcome)
+* [Get Hosting](#Get-Hosting)
+* [Creating/Importing your brand](#Creating-or-importing-your-brand)
+* [Prismic Setup Guide](#Prismic-Setup-Guide)
+* [Sign-up and get started](#Sign-up-and-get-started)
+* [Copy JSON into Prismic](#Copy-JSON-into-Prismic)
+* [Options are unlimited](#Options-are-unlimited)
+* [Prismic summary](#Prismic-summary)
+* [NodeMailer Setup](#NodeMailer-Setup)
+* [Now That You're Hosted](#Now-That-You're-Hosted)
+* [Templating email responses](#Templating-email-responses)
+* [Curator and ShareThis Setup](#Curator-and-ShareThis-Setup)
+* [All your networks in one place](#All-your-networks-in-one-place)
+* [Connect your share buttons](#Connect-your-share-buttons)
+
+
+
+## Welcome
 If you haven't used Prismic, Curator, or Nodemailer before, check out the blog for articles guiding you through the
 process. Setting up the accounts is straight-forward and easy, can be done from any device, and costs nothing. In order
 to connect your content accounts and email you will have to edit some code files where indicated.
 
-Next Step: Get Hosting
+## Get Hosting
 So you've setup Prismic and Curator, now what? You need to pick a host and get your project folder uploaded and live.
 Many times, depending on the hosting provider, they can help migrate your site. Once you are hosted you can connect your
 email provider to NodeMailer. Don't worry, even if you've never done this before, with a little effort and perhaps a
@@ -21,7 +40,7 @@ that is? Read up on how to keep your information safe before going live.
 
 Look for **LumberJack-Setup** in code files.
 
-Creating or importing your brand
+## Creating or importing your brand
 LumberJack uses a color theme focusing around two brand colors and greyscale copy framing. I recommend picking two
 contrasting colors that speak about your brand. From there, you need to generate three additional shades of color from
 each brand color. LumberJack depends on these shades being complimentary to each other and within the same color family.
@@ -35,19 +54,15 @@ background, and choose some artwork. Upload your logo and favicon, and get to pl
 
 
 
-_______
-PRISMIC
+## Prismic Setup Guide
 Let Prismic's Headless CMS do the heavy-lifting on image storage, compression, and delivery. Simply upload your media,
 compose your text, and let your ideas out for the world to find. Setup is easy, let's get started.
 
-
-Can't Wait To Show The World!
 A couple things about publishing with Prismic. This is where you will construct your posts. Once published, they will be
 live on your site immediately, you don't have to lift a finger. But in order to do that you first need to sign up at
 Prismic.io, create a new 'custom type', and copy the contents of a file to a browser window in your Prismic dashboard.
 
-
-Sign-up and get started
+## Sign-up and get started
 Head to Prismic.io and complete the sign-up process. Once logged in, you will need to create a new repository. A
 repository is a place where you will store all of the post content be it copy that you have written, images, and other
 media. Once into your dashboard, click the green 'Create Repository' button. Fill in the fields and select your role and
@@ -60,6 +75,7 @@ repeatable template that you can use for pages or posts. LumberJack only uses Pr
 'Create custom type', then click 'Repeatable Type', and enter 'post', without quotes, as the custom type name. The API
 field will automatically fill in, leave it as is.
 
+## Copy JSON into Prismic
 Next is where you are going to copy in the data from the supplied /templateJSON.json file that is in the LumberJack's
 root directory.
 
@@ -69,7 +85,8 @@ Delete everything in the Prismic JSON editor.
 Paste the contents of /templateJSON.json into the Prismic JSON Editor.
 Click 'Save'.
 You now have the template that is used in the /views/post.ejs file, and the main blog feed.
-Options are unlimited
+
+## Options are unlimited
 If you want to create a new custom type in Prismic or modify the supplied post type, you will need to appropriately edit
 the markup on your own. If you make your own you will need to use the API to destructure the data. First, make your new
 custom type in the Prismic window and create a new document using this type that uses at least one of every repeatable
@@ -91,8 +108,7 @@ change this to your liking. There are basic instructions built into the fields t
 paragraph into a repeatable zone at a time, or character length limits. This is a function of how LumberJack's default
 post template is written, you can use your own parameters if you are writing your own custom type.
 
-
-A quick summary
+## Prismic summary
 Don't forget to copy the contents of /templateJSON.json in your root directory into the Prismic JSON editor. If you
 decide to make changes to the Prismic content-type, you will need to update the appropriate EJS tags in /views/post.ejs.
 If you create a new content-type, you will need to create a new .ejs file in your /views/ directory and create new
@@ -101,14 +117,12 @@ what you are naming your custom types, or use the API endpoint in your account s
 
 
 
-__________
-NODEMAILER
+## NodeMailer Setup
 If you haven't used NodeMailer before, don't worry, even though you will be editing some things on the back-end of the
 site it's straight-forward, and that's what version control is for anyway. If this is your first time, make sure you are
 using effective versioning. You're going to need a host and an email provider before setup and testing.
 
-
-Now That You're Hosted...
+## Now That You're Hosted
 You need to connect NodeMailer in the backend of the site. In order to do this you need to decide on an email provider,
 usually your host or a major provider like gmail, and fill in the appropriate authentication details to the 'Mailer
 transport object' in the /nodemailer.js file in your root directory. In this file you will also be able to write either
@@ -119,8 +133,7 @@ the root directory. Do not upload this file to your host. Once hosted, you will 
 Most hosts have a dedicated section for doing so. They can be placed in your .htaccess file, or assigned using the
 cPanel Node.js App Manager. Check with your hosting provider for more specifics.
 
-
-Templating email responses
+## Templating email responses
 LumberJack ships setup to automatically send 2 emails through SMTP, one to the person in charge of inquires for your
 business, and one confirmation email to the person who made the request. You can automatically send as many emails out
 per request as you want, however, if you are sending more than 2 you will need to make some small changes in the /app.js
@@ -139,15 +152,15 @@ NodeMailer transport object and authentication. Beware that sometimes running a 
 can trigger an automatic spam filter.
 
 
-_____________________
-CURATOR and SHARETHIS
+
+## Curator and ShareThis Setup
 In this post you will learn about Curator as well as how to setup your social media share buttons from ShareThis.
 Curator is an aggregator, meaning that it draws content from various places and combines it into a single feed. You can
 log in and organize the content as you see fit, and can use up to three individual networks on the free-tier. If you
 upgrade to a paid tier, you have the ability to make and edit posts (including Instagram) right from your Curator
 Dashboard.
 
-All your networks in one place
+## All your networks in one place
 Let's get you setup with Curator. Head on over to Curator.io and sign up for a new account. It's super easy.
 
 Once you are in your Dashboard, you will be asked to select the social media site you want to pull content from.
@@ -175,7 +188,7 @@ If you renamed your default feed in your Curator Dashboard, you will also have t
 in /views/media.ejs. If you are putting additional feeds on your site, you will need to copy code supplied from Curator
 once you publish and then add markup for the additional feeds in your /views/partials/footer.ejs.
 
-Connect your share buttons
+## Connect your share buttons
 Head over to www.sharethis.com and signup for your free account. The first thing you will do once you signup is enter
 the domain name of your site. The LumberJack theme uses the 'Inline Share Buttons' - click the button to enable them,
 and click customize. In the next screen you need to pick your social networks. Enable the following options to
