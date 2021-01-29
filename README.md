@@ -6,9 +6,11 @@
 * [Documentation](#documentation)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [API](#api)
+* [APIs](#apis)
 * [Setup](#setup)
 * [Features](#features)
+* [Features](#features)
+* [To-do](#To-do)
 * [Known Issues](#known-issues)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -30,7 +32,7 @@ LumberJack's setup documentation can be found on the LumberJack Blog. Head to (h
 * CSS
 * ES6
 
-## API
+## APIs
 * Prismic
 * Curator
 * EmailJS
@@ -44,7 +46,7 @@ List of features ready and TODOs for future development
 * Headless content management system.
 * Secure automatic email responder.
 
-To-do list:
+## To-do
 * Implement blog post pagination and sorting.
 * Pass error handling to frontend and output to console.
 * Blog pagination, date sorting.

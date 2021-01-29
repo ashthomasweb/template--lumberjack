@@ -1,4 +1,4 @@
-// Node.js/Express Server "app.js" for "Looseleashdog" 
+// Node.js/Express Server "app.js" for "LumberJack" 
 
 // Dependencies
 require('dotenv').config();
