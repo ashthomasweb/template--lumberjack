@@ -26,10 +26,10 @@ LumberJack's setup documentation can be found on the LumberJack Blog. Head to (h
 ![Example screenshot](.images/img/screenshot.png)
 
 ## Technologies
-* Node
+* Node.js
 * EJS
-* HTML
-* CSS
+* HTML5
+* CSS3
 * ES6
 
 ## APIs
@@ -57,7 +57,7 @@ List of features ready and TODOs for future development
 * Remove WET replace() work in /blog.ejs.
 
 ## Known Issues
-* Instagram slider needs a js position helper function. Fast-clicking results in partial photo's being displayed.
+* Instagram slider needs a position helper function. Fast-clicking results in partial photo's being displayed.
 * Browser issue: event.path is not supported in Firefox, Edge, or IE. However, the main blog intro uses event.path to find parent elements and apply hover effect on mouseover of entire element.
 
 ## Status
