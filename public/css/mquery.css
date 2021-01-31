@@ -263,54 +263,54 @@
 
 @media screen and (max-width: 740px) {
 
-    .card--services-right {
+    .card--tech-right {
         margin-top: 25px;
     }
 
-    .text-pane--services p {
+    .text-pane--tech p {
         padding-left: 25px;
     }
 
     @media screen and (max-width: 723px) {
 
-        .text-pane--services {
+        .text-pane--tech {
             padding-top: 10px;
             padding-bottom: 10px;
         }
 
         @media screen and (max-width: 361px) {
 
-            .text-pane--services h2 {
+            .text-pane--tech h2 {
                 font-size: 11.5vw;
             }
 
-            .card--services-left {
+            .card--tech-left {
                 width: 280px;
                 height: 266px;
                 margin: 0 auto;
             }
 
-            .card--services-right {
+            .card--tech-right {
                 width: 280px;
                 height: 266px;
                 margin: 25px auto 0;
             }
 
-            .card--services-innerleft {
+            .card--tech-innerleft {
                 margin: 9px 6px 10px 12px;
             }
 
-            .card--services-innerright {
+            .card--tech-innerright {
                 margin: 9px 12px 10px 6px;
             }
 
-            .services-card-bottom-section {
+            .tech-card-bottom-section {
                 padding: 3px 0 14px;
             }
 
             @media screen and (max-width: 333px) {
 
-                .greeting-text--services {
+                .greeting-text--tech {
                     top: 20px;
                 }
 

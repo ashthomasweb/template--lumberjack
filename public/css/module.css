@@ -187,9 +187,9 @@
     line-height: 1.6;
 }
 
-/* || Pages - Services */
+/* || Pages - Technology */
 
-.greeting-pane--services {
+.greeting-pane--tech {
     position: relative;
     max-width: 1000px;
     height: 397px;
@@ -199,23 +199,23 @@
     overflow: hidden;
 }
 
-.greeting-pane--services h1 {
+.greeting-pane--tech h1 {
     display: inline-block;
     font-size: 60px;
 }
 
-.greeting-img--services {
+.greeting-img--tech {
     z-index: 50;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.greeting-img--services img {
+.greeting-img--tech img {
     width: 1000px;
 }
 
-.greeting-text--services {
+.greeting-text--tech {
     z-index: 51;
     position: relative;
     top: 45px;
@@ -224,20 +224,20 @@
     margin: 0 auto;
 }
 
-.greeting-text--services p {
+.greeting-text--tech p {
     margin: 15px auto;
     font-size: 20px;
     line-height: 1.6;
 }
 
-.card-pane--services {
+.card-pane--tech {
     z-index: 52;
     position: relative;
     margin: -100px auto;
     text-align: center;
 }
 
-.card--services-left {
+.card--tech-left {
     position: relative;
     display: inline-block;
     width: 300px;
@@ -246,7 +246,7 @@
     padding: 4px;
 }
 
-.card--services-right {
+.card--tech-right {
     position: relative;
     display: inline-block;
     width: 300px;
@@ -255,42 +255,37 @@
     padding: 4px;
 }
 
-.services-card-inner-wrap {
+.tech-card-inner-wrap {
     position: absolute;
     width: calc(100% - 8px);
     height: calc(100% - 8px);
     border-radius: 8px;
 }
 
-.services-card-top-section {
+.tech-card-top-section {
     width: 100%;
     height: 33%;
     padding: 20px 30px;
     border-bottom: 1px solid;
 }
 
-.services-card-bottom-section {
+.tech-card-bottom-section {
     position: relative;
     width: 100%;
     height: 67%;
     padding: 12px 0;
 }
 
-.services-card-top-section h3 {
+.tech-card-top-section h3 {
     padding-top: 9px;
     font-size: 26px;
 }
 
-.services-price {
+.tech-price {
     font-size: 22px;
 }
 
-.dog-art {
-    height: 80px;
-    margin: 0 0 10px;
-}
-
-.card--services-innerleft {
+.card--tech-innerleft {
     float: left;
     width: 118px;
     margin: 9px 0px 10px 18px;
@@ -298,7 +293,7 @@
     border: 1px solid;
 }
 
-.card--services-innerright {
+.card--tech-innerright {
     float: right;
     width: 118px;
     margin: 9px 18px 10px 0;
@@ -306,19 +301,19 @@
     border: 1px solid;
 }
 
-.text-pane--services {
+.text-pane--tech {
     max-width: 673px;
     padding: 30px 0 30px;
     margin: 0px auto 0;
 }
 
-.text-pane--services h2 {
+.text-pane--tech h2 {
     margin-bottom: 10px;
     text-align: center;
     font-size: 40px;
 }
 
-.text-pane--services p {
+.text-pane--tech p {
     display: inline-block;
     vertical-align: top;
     padding: 15px;
@@ -600,40 +595,6 @@
 .media-card-top-section h3 {
     padding-top: 9px;
     font-size: 26px;
-}
-
-.media-price {
-    font-size: 22px;
-}
-
-.dog-art {
-    height: 80px;
-    position: relative;
-    
-    margin: -5px 0 10px;
-}
-
-.card--media-innerleft {
-    float: left;
-    width: 118px;
-    margin: 9px 0px 10px 18px;
-    padding: 8px 8px 25px;
-    border: 1px solid;
-}
-
-.card--media-center {
-    width: 80%;
-    margin: 9px auto 10px auto;
-    padding: 8px 8px 25px;
-    /* border: 1px solid; */
-}
-
-.card--media-innerright {
-    float: right;
-    width: 118px;
-    margin: 9px 18px 10px 0;
-    padding: 8px 0px 25px;
-    border: 1px solid;
 }
 
 /* || Curator Carosel */

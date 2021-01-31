@@ -173,6 +173,23 @@
     width: 60%;
     height: 5px;
 }
+
+.card-art {
+    height: 80px;
+    position: relative;
+    margin: -5px 0 10px;
+}
+
+.card-img-center {
+    width: 80%;
+    margin: 9px auto 10px auto;
+    padding: 8px 8px 25px;
+}
+
+.card-lower-heading {
+    font-size: 22px;
+}
+
 /* || Section Dividers */
 
 .l-divider {

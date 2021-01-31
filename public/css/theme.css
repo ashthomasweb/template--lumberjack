@@ -298,34 +298,34 @@ footer a:hover {
 
 /* || Pages - Services */
 
-.card--services-left {
+.card--tech-left {
     background-color: var(--secondary-light);
 }
 
-.card--services-right {
+.card--tech-right {
     background-color: var(--secondary-light);
 }
 
-.services-card-inner-wrap {
+.tech-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--secondary-very-light);
     background: linear-gradient(to bottom, var(--secondary-light), var(--secondary-very-light) 4%);
 
 }
 
-.services-card-top-section {
+.tech-card-top-section {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-color: var(--secondary-light);
     background-color: var(--secondary-pale);
 }
 
-.card--services-innerleft {
+.card--tech-innerleft {
     border-color: var(--primary-pale);
     border-radius: 12px;
 }
 
-.card--services-innerright {
+.card--tech-innerright {
     border-color: var(--primary-pale);
     border-radius: 12px;
 }
