@@ -53,7 +53,8 @@ List of features ready and TODOs for future development
 * Generate font and pattern options.
 * Style ShareThis buttons.
 * Make spacing between share menu and page content dynamic.
-* Faster load time on fonts and logo
+* Faster load time on fonts and logo.
+* Remove WET replace() work in /blog.ejs.
 
 ## Known Issues
 * Instagram slider needs a js position helper function. Fast-clicking results in partial photo's being displayed.

@@ -411,7 +411,7 @@
 
 }
 
-/* Photos Page  */
+/* Media Page  */
 
 @media screen and (max-width: 1018px) {
 
@@ -433,15 +433,15 @@
             max-width: 310px;
         }
 
-        .greeting-pane--photos {
+        .greeting-pane--media {
             padding: 0 15px 0 25px;
         }
 
-        .text-pane--photos {
+        .text-pane--media {
             padding: 20px 15px 20px 25px;
         }
 
-        .text-pane--photos p {
+        .text-pane--media p {
             margin-left: 0;
         }
 
@@ -489,7 +489,7 @@
                 transform: translateX(-50%);
             }
 
-            .text-pane--photos p {
+            .text-pane--media p {
                 margin-top: 50px;
             }
 

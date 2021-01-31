@@ -484,11 +484,11 @@ footer a:hover {
     background-color: var(--primary-color);
 }
 
-.card-pane--photos p {
+.card-pane--media p {
     color: var(--copy-light);
 }
 
-.card--photos img {
+.card--media img {
     border-color: var(--primary-color);
     border-radius: 12px;
     background-color: var(--primary-color);
