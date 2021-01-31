@@ -1,5 +1,5 @@
-# Project Name
-> LumberJack - a lightweight template fully integrated with Prismic, Curator, and NodeMailer.
+# LumberJack
+> A lightweight template fully integrated with Prismic, Curator, and NodeMailer.
 
 ## Table of contents
 * [General info](#general-info)
