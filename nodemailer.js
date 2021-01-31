@@ -1,5 +1,10 @@
 // Nodemailer functions and templates for "Looseleashdog" 
 
+// ** LumberJack-Setup **
+// This is your nodemailer module. 
+// You will need to edit this file. Look for the setup instructions below.
+
+
 // Dependencies
 const nodemailer = require("nodemailer");
 const {
@@ -18,6 +23,8 @@ var transporter = nodemailer.createTransport({
         pass: process.env.MAIL_PASS,
     }
 });
+
+// ** LumberJack-Setup - Editing supplied HTML email templates **
 
 // Templates
 function inquiryTemplate() {
@@ -69,12 +76,16 @@ function confirmTemplate() {
     return output;
 };
 
-/* // New Email Template
+// ** LumberJack-Setup - New Email Template **
+
+/* 
 
 function newTemplate() {
-    // This is a new email template for you to use. Simply uncomment the template, email object, and parse lines of code associated 
-    // with "newTemplate", and add the parsed object to the exports and the bottom. Head over to your "/app.js" and look for the comment 
-    // in the /post request labeled, "Start New Template Data Here". Follow the directions.
+
+    // This is a new email template for you to use. Simply uncomment the template, email object, and parsing lines of code associated 
+    // with "newTemplate", as well as the parsed object in the exports at the bottom. Head over to your "/app.js" and look for the setup 
+    // comments in the /post request.
+
 
     // Do not remove backtick. Only edit HTML markup below. Be mindful of the objects with ${this} syntax, they are data values coming 
     // from the form and must not be changed. Stick to single quotes, only use inline CSS styles.
@@ -124,6 +135,7 @@ function newEmailTemp(user_name, user_email, message) {
     "html": "${newTemplate()}"}`;
 };
 */
+
 
 // Object parsing
 let inquiry = JSON.parse(mailNewInquiry(user_name, user_email, message));
