@@ -27,7 +27,7 @@ function sendingText() {
 }
 
 
-// || Hamburger Menu for "Looseleashdog"
+// || Hamburger Menu for "LumberJack"
 
 function hamburger() {
 
@@ -194,6 +194,7 @@ function mouseHover(event) {
 
 
 // || Footer Social Share Menu 
+
 let shareBool = true;
 let menuPos = 0;
 

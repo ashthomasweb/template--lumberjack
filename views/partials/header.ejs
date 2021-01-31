@@ -1,21 +1,22 @@
 <!-- Header partial for "LumberJack" -->
-<!-- This file is rendered on every page. The corresponding page from /views/ will render below this file. Keep open tags as-is. -->
-
+<!-- This file is rendered on every page. The corresponding page and 'pageTitle' from /views/ will render below this file. leave open tags as-is. -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="website template, full-stack template, prismic, curator, sharethis, nodemailer, node.js, javascript, web development, front-end ready template, ejs, blog, social media aggregator, ash thomas, ashthomasweb" />
-    <meta name="author" content="Ashley Thomas" />
-    <meta name="copyright" content="2020" />
-    <meta property="og:image" content="/images/lumberjack-share.jpg">
-    <meta property="og:title" content="LumberJack - All your content in one place.">
-    <meta property="og:description" content="A lightweight, scalable theme and blog for your local or social media driven business. Includes a headless CMS and social media aggregator.">
-    <meta property="og:url" content="https://www.lumberjack.ashthomasweb.com">
-    <meta name="twitter:card" content="summary_large_image">
+    
+    <title><%=pageTitle%></title>
+
+    <meta name="descirption" content="A lightweight, scalable theme and blog for your local or social media driven business. Includes a headless CMS and social media aggregator." >
+    <meta name="keywords" content="website template, full-stack template, headless cms, web template, prismic, curator, sharethis, nodemailer, node.js, javascript, web development, front-end ready template, ejs, blog, social media aggregator, ash thomas, ashthomasweb" >
+    <meta name="author" content="Ashley Thomas" >
+    <meta name="copyright" content="2020" >
+    <meta name="robots" content="index, follow" >
+    
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/base.css">
@@ -24,11 +25,17 @@
     <link rel="stylesheet" href="/css/post.css">
     <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/mquery.css">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
     
-    <title><%=pageTitle%></title>
+    <!-- Social share meto -->
+    <meta property="og:image" content="/images/lumberjack-share.jpg">
+    <meta property="og:title" content="LumberJack - All your content in one place.">
+    <meta property="og:description" content="A lightweight, scalable theme and blog for your local or social media driven business. Includes a headless CMS and social media aggregator.">
+    <meta property="og:url" content="https://www.lumberjack.ashthomasweb.com">
+    <meta name="twitter:card" content="summary_large_image">
     
     <!-- ShareThis JS-->
     <script type="text/javascript"

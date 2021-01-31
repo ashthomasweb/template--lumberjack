@@ -13,7 +13,7 @@ function adjustDescription(mid) {
     
     if (mid.matches) { 
         for (let i = 0; i < elements.length; i++ ) {
-            elements[i].innerText = arr[i].slice(0, 170) + "...";
+            elements[i].innerText = arr[i].slice(0, 165) + "...";
         } 
     } else {
         for (let i = 0; i < elements.length; i++ ) {

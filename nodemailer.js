@@ -35,7 +35,7 @@ function inquiryTemplate() {
     let inqTemplate = `
 
     <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>
-        <h2>Hi William, someone is looking at the LumberJack Theme</h2>
+        <h2>Hi Ash, someone is looking at the LumberJack Theme</h2>
             <p>Below is a copy of the email.</p> 
         <h2>From:</h2>
             <p style='padding: 0 30px;'><strong>${user_name}</strong></p>
