@@ -44,6 +44,7 @@ function hamburger() {
         let menuPos = 20;
 
         let animA = setInterval(barMid, 8);
+
         function barMid() {
             if (bar2Vis < 0.1) {
                 // normally clearInterval would be executed when value reaches 0, but due to bit arithmetic 
@@ -61,6 +62,7 @@ function hamburger() {
         setTimeout(function () {
 
             let animB = setInterval(barMove, 30);
+
             function barMove() {
                 if (barsPos == 8) {
                     clearInterval(animB);
@@ -74,6 +76,7 @@ function hamburger() {
             setTimeout(function () {
 
                 let animC = setInterval(barRotation, 2);
+
                 function barRotation() {
                     if (barsRot == 45) {
                         clearInterval(animC);
@@ -88,6 +91,7 @@ function hamburger() {
         }, 50);
 
         let animD = setInterval(menuAppear, 1);
+
         function menuAppear() {
             if (menuPos == 65) {
                 clearInterval(animD);
@@ -108,6 +112,7 @@ function hamburger() {
         setTimeout(function () {
 
             let animA = setInterval(barMid, 8);
+
             function barMid() {
                 if (bar2Vis > 0.9) {
                     clearInterval(animA);
@@ -119,6 +124,7 @@ function hamburger() {
         }, 150);
 
         let animB = setInterval(barMove, 30);
+
         function barMove() {
             if (barsPos == 0) {
                 clearInterval(animB);
@@ -131,6 +137,7 @@ function hamburger() {
 
         setTimeout(function () {
             let animC = setInterval(barRotation, 2);
+
             function barRotation() {
                 if (barsRot == 0) {
                     clearInterval(animC);
@@ -143,6 +150,7 @@ function hamburger() {
         }, 30);
 
         let animD = setInterval(menuAppear, 1);
+
         function menuAppear() {
             if (menuPos == 20) {
                 clearInterval(animD);
@@ -221,6 +229,7 @@ function footerShare() {
     function shareClose() {
 
         let shareAnimB = setInterval(menuOff, 1);
+
         function menuOff() {
             if (menuPos == 0) {
                 clearInterval(shareAnimB);
@@ -232,7 +241,7 @@ function footerShare() {
         }
     }
 
-    if (shareBool == true ) {
+    if (shareBool == true) {
         shareOpen();
         menuButton.style.backgroundColor = "var(--primary-color)";
     } else {
@@ -247,10 +256,21 @@ function footerShare() {
 
 function shareIfBlog() {
     let check = document.title;
-    if ( check == "Blog Post" || check == "Blog" ) {
+    if (check == "Blog Post" || check == "Blog") {
         footerShare();
     }
 }
 
+
+
+// || Blog post url character matching - Not working.
+
+// function postReplace(x) {
+//     let objA = "location.href='./posts/"
+//     let temp = x.replace(/ /g, "-").replace(/\'/g, "").replace(/\,/g, "").replace(/\!/g, "").replace(/\?/g, "").replace(/\./g, "").replace(/\//g, "").replace(/\"/g, "");
+//     let z = objA + temp;
+//     console.log(z);
+//     return z
+// }
 
 /* || END of document  */
