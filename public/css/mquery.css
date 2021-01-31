@@ -60,7 +60,7 @@
 
     @media screen and (max-width: 787px) {
 
-        .wrap-home2 {
+        .wrap-home-bottom {
             bottom: 30px;
         }
 
@@ -134,12 +134,11 @@
             margin: 4vw 4vw;
         }
 
-        .wrap-home1 {
+        .wrap-home-top {
             margin-top: 10px;
         }
 
-
-        .wrap-home2 {
+        .wrap-home-bottom {
             bottom: 10px;
             margin-bottom: -10px;
         }
@@ -166,7 +165,7 @@
                 margin: 3vw 3vw;
             }
 
-            .wrap-home2 {
+            .wrap-home-bottom {
                 bottom: 10px;
                 margin-bottom: -10px;
             }
@@ -192,7 +191,7 @@
                 margin: 0 auto;
             }
 
-            .wrap-home2 {
+            .wrap-home-bottom {
                 bottom: 0px;
                 margin-bottom: 0px;
             }
@@ -294,14 +293,6 @@
                 width: 280px;
                 height: 266px;
                 margin: 25px auto 0;
-            }
-
-            .card--tech-innerleft {
-                margin: 9px 6px 10px 12px;
-            }
-
-            .card--tech-innerright {
-                margin: 9px 12px 10px 6px;
             }
 
             .tech-card-bottom-section {

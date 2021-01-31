@@ -26,12 +26,12 @@
     height: 120px;
 }
 
-.wrap-home1 {
+.wrap-home-top {
     position: relative;
     display: inline-block;
 }
 
-.wrap-home2 {
+.wrap-home-bottom {
     position: relative;
     display: inline-block;
 }
@@ -180,7 +180,7 @@
     margin: -5px 0 10px;
 }
 
-.card-img-center {
+.card-box-center {
     width: 80%;
     margin: 9px auto 10px auto;
     padding: 8px 8px 25px;

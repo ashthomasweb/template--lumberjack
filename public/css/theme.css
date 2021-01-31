@@ -16,14 +16,14 @@
     /* highlight color  */
     --highlight: #f0e2d0;
     --borders: #3a3b48;
-    --copy-dark: #3a3b48;
-
+    
     /* greyscale theme colors  */
     --border-light: #e6e6e6;
     --primary-background: #ffffff;
     --secondary-background: #f9f9f9;
     --copy-light: #b4b4b4;
     --copy-mid: #6a6a6a;
+    --copy-dark: #3a3b48;
     --shadow: rgba(0, 0, 0, 0.4);
     --darken: rgba(0, 0, 0, 0.1);
     --clear: rgba(0, 0, 0, 0);
@@ -34,7 +34,6 @@
    /* fonts */
    --headers: Crete round, serif;
    --copy: nunito, sans-serif;
-
 }
 
 body {
@@ -44,21 +43,11 @@ body {
     color: var(--copy-mid);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--copy-dark);
 }
 
 /* || Link Styling */
-
-.no-style {
-    text-decoration: none;
-    color: inherit;
-}
 
 a {
     padding-bottom: 1px;
@@ -113,6 +102,11 @@ footer a:hover {
     font-size: 35px;
     font-weight: 700;
     color: var(--primary-color);
+}
+
+.no-style {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* || ShareThis menu styles  */
@@ -217,9 +211,7 @@ footer a:hover {
     border-bottom-right-radius: 4px;
 }
 
-
-
-/* || Navbar  */
+/* || Navbar and Hamburger Menu */
 
 .navbar-pane li {
     padding-bottom: 3px;
@@ -278,6 +270,10 @@ footer a:hover {
 .home-card-inner-wrap {
     border-radius: 10px;
     background-color: var(--primary-very-light);
+    background: -moz-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
+    background: -webkit-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
+    background: -o-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
+    background: -ms-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
     background: linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
 }
 
@@ -309,8 +305,11 @@ footer a:hover {
 .tech-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--secondary-very-light);
+    background: -moz-linear-gradient(to bottom, var(--secondary-light), var(--secondary-very-light) 4%);
+    background: -webkit-linear-gradient(to bottom, var(--secondary-light), var(--secondary-very-light) 4%);
+    background: -o-linear-gradient(to bottom, var(--secondary-light), var(--secondary-very-light) 4%);
+    background: -ms-linear-gradient(to bottom, var(--secondary-light), var(--secondary-very-light) 4%);
     background: linear-gradient(to bottom, var(--secondary-light), var(--secondary-very-light) 4%);
-
 }
 
 .tech-card-top-section {
@@ -318,16 +317,6 @@ footer a:hover {
     border-top-right-radius: 8px;
     border-bottom-color: var(--secondary-light);
     background-color: var(--secondary-pale);
-}
-
-.card--tech-innerleft {
-    border-color: var(--primary-pale);
-    border-radius: 12px;
-}
-
-.card--tech-innerright {
-    border-color: var(--primary-pale);
-    border-radius: 12px;
 }
 
 /* || Pages - Blog Main */
@@ -339,6 +328,10 @@ footer a:hover {
 .blog-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--secondary-very-light);
+    background: -moz-linear-gradient(to right, var(--secondary-light), transparent 5%), linear-gradient(to left top, var(--secondary-light), var(--secondary-very-light) 3%);
+    background: -webkit-linear-gradient(to right, var(--secondary-light), transparent 5%), linear-gradient(to left top, var(--secondary-light), var(--secondary-very-light) 3%);
+    background: -o-linear-gradient(to right, var(--secondary-light), transparent 5%), linear-gradient(to left top, var(--secondary-light), var(--secondary-very-light) 3%);
+    background: -ms-linear-gradient(to right, var(--secondary-light), transparent 5%), linear-gradient(to left top, var(--secondary-light), var(--secondary-very-light) 3%);
     background: linear-gradient(to right, var(--secondary-light), transparent 5%), linear-gradient(to left top, var(--secondary-light), var(--secondary-very-light) 3%);
 }
 
@@ -494,7 +487,6 @@ footer a:hover {
     background-color: var(--primary-color);
 }
 
-
 .card--media-left {
     background-color: var(--primary-light);
 }
@@ -506,8 +498,11 @@ footer a:hover {
 .media-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--primary-very-light);
+    background: -moz-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
+    background: -webkit-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
+    background: -o-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
+    background: -ms-linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
     background: linear-gradient(to bottom, var(--primary-pale), var(--primary-very-light) 4%);
-
 }
 
 .media-card-top-section {
@@ -515,16 +510,6 @@ footer a:hover {
     border-top-right-radius: 8px;
     border-bottom-color: var(--primary-light);
     background-color: var(--primary-pale);
-}
-
-.card--media-innerleft {
-    border-color: var(--primary-pale);
-    border-radius: 12px;
-}
-
-.card--media-innerright {
-    border-color: var(--primary-pale);
-    border-radius: 12px;
 }
 
 /* || Pages - Contact */
@@ -556,8 +541,11 @@ footer a:hover {
 .contact-card-inner-wrap {
     border-radius: 8px;
     background-color: var(--primary-very-light);
+    background: -moz-linear-gradient(to bottom, var(--primary-light), var(--primary-very-light) 5%);
+    background: -webkit-linear-gradient(to bottom, var(--primary-light), var(--primary-very-light) 5%);
+    background: -o-linear-gradient(to bottom, var(--primary-light), var(--primary-very-light) 5%);
+    background: -ms-linear-gradient(to bottom, var(--primary-light), var(--primary-very-light) 5%);
     background: linear-gradient(to bottom, var(--primary-light), var(--primary-very-light) 5%);
-
 }
 
 .contact-card-top-section {
