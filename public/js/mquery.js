@@ -1,4 +1,4 @@
-// || JS Media Queries for "Looseleashdog"
+// || JS Media Queries for "LumberJack"
 
 // || Blog main description slice length
 let collection = Array.from(document.getElementsByClassName("description"));

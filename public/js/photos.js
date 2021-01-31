@@ -1,6 +1,6 @@
 // || Media Page JS for "LumberJack"
 
-// || Curator carousel control buttons 
+// || Curator carousel control buttons - Needs refactor. Produces display errors on fast clicking.
 
 function curatorLeft() {
     document.getElementById("curator-slider").scrollBy(-310.5, 0);

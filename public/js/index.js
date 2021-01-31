@@ -1,6 +1,7 @@
-// Main JavaScript file for "Looseleashdog"
+// Main JavaScript file for "LumberJack"
 
-// || Contact form field button color 
+
+// || Contact form check for field input then change button color 
 
 function formFieldCheck() {
     let name = document.forms["contact"]["user_name"].value;
@@ -20,15 +21,13 @@ function formFieldCheck() {
     }
 }
 
-
 function sendingText() {
     let elem = document.getElementById("contact-button");
     elem.innerText = "Sending";
 }
 
+
 // || Hamburger Menu for "Looseleashdog"
-// Would be best written with CSS animations or transitions.
-// I used pure JS as an exercise and to balance the languages used on the site.
 
 function hamburger() {
 
@@ -47,9 +46,10 @@ function hamburger() {
         let animA = setInterval(barMid, 8);
         function barMid() {
             if (bar2Vis < 0.1) {
-                // normally clearInterval would be executed when value reaches 0, but due to bit arithmetic 0.1 - 0.1 is displayed in extended notation. 
+                // normally clearInterval would be executed when value reaches 0, but due to bit arithmetic 
+                // 0.1 - 0.1 is displayed in extended notation. 
                 clearInterval(animA);
-                // reset opacity to typical value for consistency
+                // reset opacity to typical value for consistency.
                 bar2Vis = 0;
                 bar2.style.opacity = bar2Vis;
             } else {
@@ -166,7 +166,8 @@ function hamburger() {
 
 }
 
-// || Blog Main hover event 
+
+// || Blog Main hover event - Needs refactor. Does not work in firefox, produces error if inspector is open.
 
 function mouseHover(event) {
     let path = event.path;
@@ -190,6 +191,7 @@ function mouseHover(event) {
     }
 
 }
+
 
 // || Footer Social Share Menu 
 let shareBool = true;
@@ -238,6 +240,7 @@ function footerShare() {
     }
 
 }
+
 
 // || Open share menu on load 
 

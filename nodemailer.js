@@ -114,14 +114,14 @@ function newTemplate() {
 
 // Nodemailer email objects
 function mailNewInquiry(user_name, user_email, message) {
-    return `{"from": "mailer@lumberjack.rideoutweb.com",
+    return `{"from": "info@ashthomasweb.com",
     "to": "rideoutweb@gmail.com",
     "subject": "A person is reaching out about the LumberJack theme.",
     "html": "${inquiryTemplate()}"}`;
 };
 
 function mailConfirmation(user_name, user_email, message) {
-    return `{"from": "mailer@lumberjack.rideoutweb.com",
+    return `{"from": "info@ashthomasweb.com",
     "to": "${user_email}",
     "subject": "This is your email confirmation from LumberJack!",
     "html": "${confirmTemplate()}"}`;
@@ -129,9 +129,9 @@ function mailConfirmation(user_name, user_email, message) {
 
 /*
 function newEmailTemp(user_name, user_email, message) {
-    return `{"from": "mailer@lumberjack.rideoutweb.com",
+    return `{"from": "your@email.here",
     "to": "${user_email}",
-    "subject": "This is your email confirmation from LumberJack!",
+    "subject": "This is your email confirmation",
     "html": "${newTemplate()}"}`;
 };
 */

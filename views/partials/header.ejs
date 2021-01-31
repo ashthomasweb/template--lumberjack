@@ -1,4 +1,6 @@
-<!-- Header partial for "Looseleashdog" -->
+<!-- Header partial for "LumberJack" -->
+<!-- This file is rendered on every page. The corresponding page from /views/ will render below this file. Keep open tags as-is. -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,17 +8,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="dog walking, leash skills, loose leash skills, looseleashdog, saco dog walking, biddeford dog walking, leash training" />
-    <meta name="author" content="Rideout Web" />
+    <meta name="keywords" content="website template, full-stack template, prismic, curator, sharethis, nodemailer, node.js, javascript, web development, front-end ready template, ejs, blog, social media aggregator, ash thomas, ashthomasweb" />
+    <meta name="author" content="Ashley Thomas" />
     <meta name="copyright" content="2020" />
-    <meta property="og:image" content="/images/rosie-share.jpg">
-    <meta property="og:title" content="Blog and Leash Training Services">
-    <meta property="og:description"
-        content="Learn about your animal's leash skills or hire professional dog walking services.">
-    <meta property="og:url" content="https://www.looseleashdog.com">
+    <meta property="og:image" content="/images/lumberjack-share.jpg">
+    <meta property="og:title" content="LumberJack - All your content in one place.">
+    <meta property="og:description" content="A lightweight, scalable theme and blog for your local or social media driven business. Includes a headless CMS and social media aggregator.">
+    <meta property="og:url" content="https://www.lumberjack.ashthomasweb.com">
     <meta name="twitter:card" content="summary_large_image">
-    <title><%=pageTitle%></title>
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/base.css">
@@ -28,110 +27,111 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
-
-  
+    
+    <title><%=pageTitle%></title>
+    
     <!-- ShareThis JS-->
     <script type="text/javascript"
         src="https://platform-api.sharethis.com/js/sharethis.js#property=5fdcf5e7808aed0011dfaa1c&product=inline-share-buttons"
         async="async">
     </script>
 
-    <!-- **LumberJack Instructions**  -->
-    <!-- Replace "PASTE_YOUR_PROPERTY_ID_HERE" in the code below with your Product Id that you can find in your ShareThis account. Make sure you don't overwrite the "=" or the "&" that sit before and after. -->
-    <!-- <script type="text/javascript"
-    src="https://platform-api.sharethis.com/js/sharethis.js#property=PASTE_YOUR_PROPERTY_ID_HERE&product=inline-share-buttons"
-    async="async">
-    </script> -->
-    <!-- **END LumberJack Instructions**  -->
+    <!-- **LumberJack-Setup - ShareThis paste-in code area**  -->
+    <!-- Replace "PASTE_YOUR_PROPERTY_ID_HERE" in the code below with your Product Id that you can find in your ShareThis account. 
+        Make sure you don't overwrite the "=" or the "&" that sit before and after the entry. -->
+
+    <!-- 
+    <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=PASTE_YOUR_PROPERTY_ID_HERE&product=inline-share-buttons" async="async">
+    </script> 
+    -->
 
     <!-- END ShareThis JS-->
 
 </head>
 
 <body onload="shareIfBlog()">
+
     <% if ( pageTitle === "Home" ) { %>
 
-    <div class="l-header l-home-header">
-        <div class="l-header-wrapper l-home-header">
-            <div class="logo-pane">
-                <img class="logo-main" src="/images/logo.png">
-            </div>
-        </div>
-    </div>
-    <div class="l-body-wrapper--home ">
-        <div class="l-content-wrapper">
-
-            <% } else { %>
-
-            <div id="h-menu" class="h-menu-drop">
-                <ul>
-                    <a href="/technology">
-                        <li id="technology" <% if (pageTitle === "Technology") { %> class="current" <% } %>>Tech</li>
-                    </a>
-                    <a href="/blog">
-                        <li id="blog" <% if (pageTitle === "Blog" || pageTitle === "Blog Post") { %> class="current"
-                            <% } %>>Blog</li>
-                    </a>
-                    <a href="/media">
-                        <li id="media" <% if (pageTitle === "Media") { %> class="current" <% } %>>Media</li>
-                    </a>
-                    <a href="/contact">
-                        <li id="contact" <% if (pageTitle === "Contact") { %> class="current" <% } %>>Contact</li>
-                    </a>
-                </ul>
-            </div>
-
-            <div class="l-header">
-                <div class="l-header-wrapper">
-
-                    <div class="smlogo-pane">
-                        <a href="/"><img class="logo-sm" src="/images/logo.png"></a>
-                    </div>
-
-                    <div class="navbar-pane">
-                        <ul>
-                            <a href="/technology">
-                                <li id="technology" <% if (pageTitle === "Technology") { %> class="current" <% } %>>Tech
-                                </li>
-                                </li>
-                            </a>
-                            <a href="/blog">
-                                <li id="blog" <% if (pageTitle === "Blog" || pageTitle === "Blog Post") { %>
-                                    class="current" <% } %>>Blog</li>
-                            </a>
-                            <a href="/media">
-                                <li id="media" <% if (pageTitle === "Media") { %> class="current" <% } %>>Media</li>
-                            </a>
-                            <a href="/contact">
-                                <li id="contact" <% if (pageTitle === "Contact") { %> class="current" <% } %>>Contact
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-
-                    <div class="h-menu-pane">
-                        <input id="h-menu-input" type="checkbox" onclick="hamburger()">
-                        <div id="h-box" class="h-menu-box">
-                            <div class="h-menu-bars">
-                                <div id="h-bar1" class="h-menu-bar"></div>
-                                <div id="h-bar2" class="h-menu-bar"></div>
-                                <div id="h-bar3" class="h-menu-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="l-header l-home-header">
+            <div class="l-header-wrapper l-home-header">
+                <div class="logo-pane">
+                    <img class="logo-main" src="/images/logo.png">
                 </div>
             </div>
+        </div>
+        <div class="l-body-wrapper--home ">
+            <div class="l-content-wrapper">
 
-            <% if ( pageTitle === "Contact" ) { %>
-                <div class="l-body-wrapper--contact">
-                <div class="l-content-wrapper--contact">
-            <%} else { %>
-                <div class="l-body-wrapper">
-                <div class="l-content-wrapper">
-            <% } %>
+    <% } else { %> <!-- ** LumberJack-Setup - Main menu links -->
+                   <!-- You will need to change the pageTitle variable in your /app.js, as well as the text content of the <li>, and the href.
+                        Make sure to change the hamburger, the navbar, and the menu boxes in /views/home.ejs. -->
+                           
+        <div id="h-menu" class="h-menu-drop">
+            <ul>
+                <a href="/technology">
+                    <li <% if (pageTitle === "Technology") { %> class="current" <% } %>>Tech</li>
+                </a>
+                <a href="/blog">
+                    <li <% if (pageTitle === "Blog" || pageTitle === "Blog Post") { %> class="current" <% } %>>Blog</li>
+                </a>
+                <a href="/media">
+                    <li <% if (pageTitle === "Media") { %> class="current" <% } %>>Media</li>
+                </a>
+                <a href="/contact">
+                    <li <% if (pageTitle === "Contact") { %> class="current" <% } %>>Contact</li>
+                </a>
+            </ul>
+        </div>
 
+        <div class="l-header">
+            <div class="l-header-wrapper">
+
+                <div class="smlogo-pane">
+                    <a href="/"><img class="logo-sm" src="/images/logo.png"></a>
+                 </div>
+
+                <div class="navbar-pane">
+                    <ul>
+                        <a href="/technology">
+                            <li <% if (pageTitle === "Technology") { %> class="current" <% } %>>Tech</li>
+                        </a>
+                        <a href="/blog">
+                            <li <% if (pageTitle === "Blog" || pageTitle === "Blog Post") { %> class="current" <% } %>>Blog</li>
+                        </a>
+                        <a href="/media">
+                            <li <% if (pageTitle === "Media") { %> class="current" <% } %>>Media</li>
+                        </a>
+                        <a href="/contact">
+                            <li <% if (pageTitle === "Contact") { %> class="current" <% } %>>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="h-menu-pane">
+                    <input id="h-menu-input" type="checkbox" onclick="hamburger()">
+                    <div id="h-box" class="h-menu-box">
+                        <div class="h-menu-bars">
+                            <div id="h-bar1" class="h-menu-bar"></div>
+                            <div id="h-bar2" class="h-menu-bar"></div>
+                            <div id="h-bar3" class="h-menu-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <% if ( pageTitle === "Contact" ) { %>
+            <div class="l-body-wrapper--contact">
+            <div class="l-content-wrapper--contact">
+        <%} else { %>
+            <div class="l-body-wrapper">
+            <div class="l-content-wrapper">
         <% } %>
 
+    <% } %>
 
-                            <!-- || END of document -->
+
+<!-- END of document -->
