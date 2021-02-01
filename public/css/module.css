@@ -308,6 +308,7 @@
 }
 
 .text-pane--tech h2 {
+    padding: 0 10px;
     margin-bottom: 10px;
     text-align: center;
     font-size: 40px;
