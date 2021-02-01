@@ -1,12 +1,13 @@
 # LumberJack
-> A lightweight template fully integrated with Prismic, Curator, and NodeMailer.
+> A lightweight template fully integrated with Prismic, Curator, and NodeMailer. 
+> View live at (https://www.lumberjack.ashthomasweb.com).
 
 ## Table of contents
 * [General info](#general-info)
 * [Documentation](#documentation)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [APIs](#apis)
+* [Integrated APIs](#integrated-apis)
 * [Setup](#setup)
 * [Features](#features)
 * [Features](#features)
@@ -18,14 +19,14 @@
 * [Additional Screenshots](#additional-screenshots)
 
 ## General info
-This template is targeted at a small business bringing their products, services, or ideas to the web. Artisans, influencers, and private businesses need a way to integrate social media, ongoing public interest, and a strong brand sense. LumberJack provides a quick setup for even a beginner front-end dev. 
+This template is targeted at the needs of small businesses bringing their products, services, or ideas to the web. Artisans, influencers, and private businesses need a way to integrate social media, ongoing public interest, and a strong brand sense. LumberJack provides a quick setup for even a beginner front-end dev. 
 
-In order to implement LumberJack, you will need to establish hosting and edit some code files, but if you can follow directions and are willing to learn something new along the way LumberJack is accesible to any developer. 
+In order to implement LumberJack, you will need to establish hosting and edit some code files, but if you can follow directions and are willing to learn something new along the way LumberJack is accesible to any developer. Your host and plan must support a Node runtime. If you wish to use gmail as your email provider, your host must support external SMTP. LumberJack is compatible with any SMTP email provider.
 
-If you already have brand images, colors, copy, and social accounts, you can expect to have the site fully running and styled in one day. If you are starting from scratch and need to generate images, copy, accounts, and a brand sense, expect 1 - 2 weeks for full deployment.
+If you are familiar with hosting services and already have brand images, colors, copy, and social accounts, you can expect to have the site fully running and styled in one day. If you are starting from scratch and need to generate images, copy, accounts, and a brand sense, expect 1 - 2 weeks for full deployment.
 
 ## Documentation
-LumberJack's setup documentation can be found on the LumberJack Blog. Head to (https://www.lumberjack.ashthomasweb.com/blog) to get started. You can find articles helping you setup NodeMailer, Prismic, Curator, and how to start integrating your brand content. You can find a text-only version in the documentation.
+LumberJack's setup documentation can be found on the LumberJack Blog. Head to (https://www.lumberjack.ashthomasweb.com/blog) to get started. You can find articles helping you setup NodeMailer, Prismic, Curator, and how to start integrating your brand content. You can find a text-only version in the root directory.
 
 ## Screenshots
 ![Example screenshot](/public/images/readme/ss.png)
@@ -34,22 +35,23 @@ LumberJack's setup documentation can be found on the LumberJack Blog. Head to (h
 
 ## Technologies
 * Node.js v12.18.3
+* Express v4.17.1
+* NodeMailer v6.4.17
 * EJS v3.1.5
 * HTML5
 * CSS3
 * ES6
 
-## APIs
+## Integrated APIs
 * Prismic
 * Curator
-* EmailJS
 * ShareThis
 
 ## Features
 List of features ready and TODOs for future development
-* Fully mobile ready
-* SMACCS Scalable architecture
-* Multi-network social media aggregator
+* Fully mobile ready.
+* SMACCS Scalable architecture.
+* Multi-network social media aggregator.
 * Headless content management system.
 * Secure automatic email responder.
 
@@ -77,7 +79,6 @@ Project inspired by a client project that was built for scalability and modulari
 Created by Ash Thomas (https://www.ashthomasweb.com/) - feel free to contact me!
 
 ## Additional Screenshots
-
 ![Example screenshot](/public/images/readme/ss1.png)
 
 ![Example screenshot](/public/images/readme/ss2.png)
