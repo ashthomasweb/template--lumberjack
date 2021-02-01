@@ -23,7 +23,7 @@ This template is great for a local business taking their products or services to
 LumberJack's setup documentation can be found on the LumberJack Blog. Head to (https://www.lumberjack.ashthomasweb.com/blog) to get started. You can find articles helping you setup NodeMailer, Prismic, Curator, and how to start integrating your brand content. You can find a text-only version in the documentation.
 
 ## Screenshots
-![Example screenshot](.images/img/screenshot.png)
+![Example screenshot](/public/images/readme/capture.png)
 
 ## Technologies
 * Node.js
