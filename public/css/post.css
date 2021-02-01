@@ -145,6 +145,7 @@
 }
 
 .post-gallery-img {
+    max-width: 94vw;
     width: auto;
     border: 1px solid;
     margin: 0 15px 10px;

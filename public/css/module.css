@@ -649,7 +649,7 @@
 .right-button-center {
     position: absolute;
     top: 50%;
-    right: -4px;
+    right: -2px;
     transform: translateY(-156px);
     width: 42px;
     height: 312px;

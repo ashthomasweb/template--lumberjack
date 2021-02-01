@@ -353,9 +353,8 @@
             width: 292px;
         }
 
-        .intro-text-box h2 {
-            /* heading */
-            font-size: 24px;
+        .intro-text-box {
+            height: 231px;
         }
 
         .intro-text-box p:nth-child(2) {
@@ -364,13 +363,10 @@
             max-height: 154px;
         }
 
-        .intro-text-box {
-            height: 231px;
-        }
-
         .intro-text-box h2 {
             /* heading */
             top: 28px;
+            font-size: 24px;
         }
 
         .intro-read-more {
@@ -418,81 +414,89 @@
 @media screen and (max-width: 1018px) {
 
     .carousel--curator {
-        width: 689px;
+        width: 691px;
     }
 
     .viewport {
         max-width: 620px;
     }
 
-    @media screen and (max-width: 705px) {
+    @media screen and (max-width: 724px) {
 
-        .carousel--curator {
-            width: 379px;
+        .card--media-right {
+            margin-top: 25px;
         }
 
-        .viewport {
-            max-width: 310px;
-        }
-
-        .greeting-pane--media {
-            padding: 0 15px 0 25px;
-        }
-
-        .text-pane--media {
-            padding: 20px 15px 20px 25px;
-        }
-
-        .text-pane--media p {
-            margin-left: 0;
-        }
-
-        @media screen and (max-width: 379px) {
-
-            .l-content-wrapper {
-                overflow: hidden;
-            }
-
-            .left-button-center button {
-                float: left;
-                position: relative;
-                height: 50px;
-                width: 70px;
-                bottom: -321px;
-                left: 88px;
-                background-color: var(--theme-blue);
-                background-position: center;
-                border-radius: 12px;
-            }
-
-            .left-button-center {
-                opacity: 1;
-            }
-
-            .right-button-center {
-                opacity: 1;
-            }
-
-            .right-button-center button {
-                float: right;
-                position: relative;
-                width: 70px;
-                bottom: -321px;
-                right: 84px;
-                height: 50px;
-                background-color: var(--theme-blue);
-                background-position: center;
-                border-radius: 12px;
-            }
+        @media screen and (max-width: 705px) {
 
             .carousel--curator {
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%);
+                width: 381px;
+            }
+
+            .viewport {
+                max-width: 310px;
+            }
+
+            .greeting-pane--media {
+                padding: 0 15px 0 25px;
+            }
+
+            .text-pane--media {
+                padding: 20px 15px 20px 25px;
             }
 
             .text-pane--media p {
-                margin-top: 50px;
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: 379px) {
+
+                .l-content-wrapper {
+                    overflow: hidden;
+                }
+
+                .left-button-center button {
+                    float: left;
+                    position: relative;
+                    height: 50px;
+                    width: 70px;
+                    bottom: -321px;
+                    left: 88px;
+                    background-color: var(--primary-color);
+                    background-position: center;
+                    border-radius: 12px;
+                }
+
+                .left-button-center {
+                    opacity: 1;
+                }
+
+                .right-button-center {
+                    opacity: 1;
+                }
+
+                .right-button-center button {
+                    float: right;
+                    position: relative;
+                    width: 70px;
+                    bottom: -321px;
+                    right: 84px;
+                    height: 50px;
+                    background-color: var(--primary-color);
+                    background-position: center;
+                    border-radius: 12px;
+                }
+
+                .carousel--curator {
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .text-pane--media p {
+                    margin-top: 50px;
+                }
+
             }
 
         }
@@ -564,7 +568,6 @@
     }
 
     .greeting-pane--contact p {
-        max-height: 96px;
         padding: 0 15px;
     }
 
@@ -603,10 +606,6 @@
 
             .greeting-img--contact img {
                 height: 795px;
-            }
-
-            .greeting-pane--contact {
-                margin-bottom: 30px;
             }
 
             .greeting-pane--contact h1 {
