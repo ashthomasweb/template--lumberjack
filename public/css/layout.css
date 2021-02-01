@@ -54,7 +54,7 @@
     z-index: 83;
     position: fixed;
     top: 20px;
-    right: 0;
+    right: -2px;
     width: auto;
     height: 45px;
     padding: 10px;
