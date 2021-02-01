@@ -10,7 +10,6 @@
 * [Integrated APIs](#integrated-apis)
 * [Setup](#setup)
 * [Features](#features)
-* [Features](#features)
 * [To-do](#To-do)
 * [Known Issues](#known-issues)
 * [Status](#status)
@@ -48,12 +47,12 @@ LumberJack's setup documentation can be found on the LumberJack Blog. Head to (h
 * ShareThis
 
 ## Features
-List of features ready and TODOs for future development
 * Fully mobile ready.
-* SMACCS Scalable architecture.
+* SMACCS Scalable Architecture.
 * Multi-network social media aggregator.
 * Headless content management system.
 * Secure automatic email responder.
+* Dynamically rendered blog posts.
 
 ## To-do
 * Implement blog post pagination and sorting.
