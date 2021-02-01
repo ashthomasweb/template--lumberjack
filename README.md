@@ -25,11 +25,12 @@ LumberJack's setup documentation can be found on the LumberJack Blog. Head to (h
 
 ## Screenshots
 ![Example screenshot](/public/images/readme/ss.png)
+
 ![Example screenshot](/public/images/readme/mobile.png)
 
 ## Technologies
-* Node.js
-* EJS
+* Node.js v12.18.3
+* EJS v3.1.5
 * HTML5
 * CSS3
 * ES6
@@ -63,17 +64,20 @@ List of features ready and TODOs for future development
 * Browser issue: event.path is not supported in Firefox, Edge, or IE. However, the main blog intro uses event.path to find parent elements and apply hover effect on mouseover of entire element.
 
 ## Status
-Project is: _in development_.
+Project is: _in production_.
 
 ## Inspiration
-Project inspired by a client project that was built for scalability and modularity. Proving successful upon porting to a new brand sense the theme was developed into a stand-alone template.
+Project inspired by a client project that was built for scalability and modularity. Proving successful upon porting to a new brand identity, the theme was developed into a stand-alone template.
 
 ## Contact
 Created by Ash Thomas (https://www.ashthomasweb.com/) - feel free to contact me!
 
 ## Additional Screenshots
+
 ![Example screenshot](/public/images/readme/ss1.png)
+
 ![Example screenshot](/public/images/readme/ss2.png)
-![Example screenshot](/public/images/readme/ss3.png)
+
 ![Example screenshot](/public/images/readme/ss4.png)
+
 ![Example screenshot](/public/images/readme/ss5.png)
