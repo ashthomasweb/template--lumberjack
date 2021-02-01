@@ -21,7 +21,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
-  "author": "William Rideout",
+  "author": "Ash Thomas",
   "license": "ISC",
   "repository": {
     "type": "git",
