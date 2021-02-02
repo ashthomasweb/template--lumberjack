@@ -613,7 +613,7 @@
     border: 0;
     background-image: url("/images/icons/left-arrow.png");
     background-repeat: no-repeat;
-    background-position: 11px 138px;
+    background-position: 10px 138px;
 }
 
 .crt-post-footer {
@@ -661,7 +661,7 @@
     height: 312px;
     border: 0;
     background-image: url("/images/icons/right-arrow.png");
-    background-position: 11px 138px;
+    background-position: 10px 138px;
     background-repeat: no-repeat;
 }
 
