@@ -2,6 +2,18 @@
 
 // || Curator carousel control buttons - Needs refactor. Produces display errors on fast clicking.
 
+
+
+
+function getWidth() {
+    console.log(getComputedStyle(document.getElementsByClassName("inner-frame")[0]).width);
+    console.log(document.getElementById("curator-slider").style);
+}
+
+
+
+
+
 function curatorLeft() {
     document.getElementById("curator-slider").scrollBy(-310.5, 0);
 }

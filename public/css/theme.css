@@ -260,7 +260,6 @@ footer a:hover {
 .card--home {
     background-color: var(--primary-light);
     transition: background-color .1s linear;
-    
 }
 
 .card--home:hover {
