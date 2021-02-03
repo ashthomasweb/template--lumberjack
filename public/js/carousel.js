@@ -1,8 +1,9 @@
 // || Media Page JS for "LumberJack"
 
+// || Carousel click and position helper
+
 {
     let i = 0;
-    
     
     function setPosition(input) {
         
@@ -66,13 +67,11 @@
 
     function curatorLeft() {
         let pos = setPosition("left");
-        console.log(pos);
         document.getElementById("curator-slider").scrollTo(document.getElementsByClassName("crt-feed")[0].children[pos].offsetLeft, 0);
     }
 
     function curatorRight() {
         let pos = setPosition("right");
-        console.log(pos);
         document.getElementById("curator-slider").scrollTo(document.getElementsByClassName("crt-feed")[0].children[pos].offsetLeft, 0);
     }
 
