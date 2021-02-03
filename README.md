@@ -65,7 +65,6 @@ LumberJack's setup documentation can be found on the LumberJack Blog. Head to (h
 * Remove WET replace() work in /blog.ejs.
 
 ## Known Issues
-* Instagram slider needs a position helper function. Fast-clicking results in partial photo's being displayed.
 * Browser issue: event.path is not supported in Firefox, Edge, or IE. However, the main blog intro uses event.path to find parent elements and apply hover effect on mouseover of entire element.
 
 ## Status

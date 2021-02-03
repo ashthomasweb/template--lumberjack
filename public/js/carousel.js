@@ -1,44 +1,61 @@
 // || Media Page JS for "LumberJack"
 
-{    
+{
     let i = 0;
     
+    
     function setPosition(input) {
-        let viewWidth = getComputedStyle(document.getElementsByClassName("carousel--curator")[0]).width;
-
-        if ( input === "left" ) {
-
-            if ( i === 0 ) {
+        
+        if (input === "left") {
+            
+            if (i === 0) {
                 // do nothing
             } else {
                 i--;
             }
-
-        } else if ( input === "right" ) {
-
-            if ( viewWidth === "1000px" ) {
-
-                if ( i === document.getElementsByClassName("crt-feed")[0].children.length - 3 ) {
+            
+        } else if (input === "right") {
+            
+            function viewRange() {
+        
+                let viewWidth = getComputedStyle(document.getElementsByClassName("carousel--curator")[0]).width;
+                let viewNum = Number(viewWidth.replace("px", ""));
+        
+                if ( viewNum > 998 ) {
+                    return "full";
+                } else if ( viewNum < 692 && viewNum > 690 ) {
+                    return "mid";
+                } else {
+                    return "small";
+                }
+        
+            }
+            
+            if ( viewRange() === "full") {
+               
+                if (i === document.getElementsByClassName("crt-feed")[0].children.length - 3) {
                     // do nothing
                 } else {
                     i++;
                 }
-                
-            } else if ( viewWidth === "691px" ) {
 
-                if ( i === document.getElementsByClassName("crt-feed")[0].children.length - 2 ) {
+            } else if ( viewRange() === "mid" ) {
+
+                if (i === document.getElementsByClassName("crt-feed")[0].children.length - 2) {
+                    // do nothing
+                } else {
+                    i++;
+                }
+
+            } else if ( viewRange() === "small" ) {
+
+                if (i === document.getElementsByClassName("crt-feed")[0].children.length - 1) {
                     // do nothing
                 } else {
                     i++;
                 }
 
             } else {
-
-                if ( i === document.getElementsByClassName("crt-feed")[0].children.length - 1 ) {
-                    // do nothing
-                } else {
-                    i++;
-                }
 
             }
 
@@ -46,21 +63,19 @@
 
         return i;
     }
-    
+
     function curatorLeft() {
-        let pos = setPosition("left");    
-        let slider = document.getElementById("curator-slider");
-        let frame = document.getElementsByClassName("crt-feed")[0];
-        slider.scrollTo(frame.children[pos].offsetLeft, 0);
+        let pos = setPosition("left");
+        console.log(pos);
+        document.getElementById("curator-slider").scrollTo(document.getElementsByClassName("crt-feed")[0].children[pos].offsetLeft, 0);
     }
-    
+
     function curatorRight() {
         let pos = setPosition("right");
-        let slider = document.getElementById("curator-slider");
-        let frame = document.getElementsByClassName("crt-feed")[0];
-        slider.scrollTo(frame.children[pos].offsetLeft, 0);
+        console.log(pos);
+        document.getElementById("curator-slider").scrollTo(document.getElementsByClassName("crt-feed")[0].children[pos].offsetLeft, 0);
     }
-    
+
 }
 
 document.getElementById("curator-hover").addEventListener("mouseover", function () {
