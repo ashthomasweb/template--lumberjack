@@ -1,25 +1,66 @@
 // || Media Page JS for "LumberJack"
 
-// || Curator carousel control buttons - Needs refactor. Produces display errors on fast clicking.
+{    
+    let i = 0;
+    
+    function setPosition(input) {
+        let viewWidth = getComputedStyle(document.getElementsByClassName("carousel--curator")[0]).width;
 
+        if ( input === "left" ) {
 
+            if ( i === 0 ) {
+                // do nothing
+            } else {
+                i--;
+            }
 
+        } else if ( input === "right" ) {
 
-function getWidth() {
-    console.log(getComputedStyle(document.getElementsByClassName("inner-frame")[0]).width);
-    console.log(document.getElementById("curator-slider").style);
-}
+            if ( viewWidth === "1000px" ) {
 
+                if ( i === document.getElementsByClassName("crt-feed")[0].children.length - 3 ) {
+                    // do nothing
+                } else {
+                    i++;
+                }
+                
+            } else if ( viewWidth === "691px" ) {
 
+                if ( i === document.getElementsByClassName("crt-feed")[0].children.length - 2 ) {
+                    // do nothing
+                } else {
+                    i++;
+                }
 
+            } else {
 
+                if ( i === document.getElementsByClassName("crt-feed")[0].children.length - 1 ) {
+                    // do nothing
+                } else {
+                    i++;
+                }
 
-function curatorLeft() {
-    document.getElementById("curator-slider").scrollBy(-310.5, 0);
-}
+            }
 
-function curatorRight() {
-    document.getElementById("curator-slider").scrollBy(310.5, 0);
+        }
+
+        return i;
+    }
+    
+    function curatorLeft() {
+        let pos = setPosition("left");    
+        let slider = document.getElementById("curator-slider");
+        let frame = document.getElementsByClassName("crt-feed")[0];
+        slider.scrollTo(frame.children[pos].offsetLeft, 0);
+    }
+    
+    function curatorRight() {
+        let pos = setPosition("right");
+        let slider = document.getElementById("curator-slider");
+        let frame = document.getElementsByClassName("crt-feed")[0];
+        slider.scrollTo(frame.children[pos].offsetLeft, 0);
+    }
+    
 }
 
 document.getElementById("curator-hover").addEventListener("mouseover", function () {
