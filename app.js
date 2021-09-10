@@ -180,9 +180,9 @@ app.post('/contact', function (req, res) {
 // || Listener 
 
 let port = process.env.PORT;
-if (port == null || port == "") { 
-    port = 3000; 
-}
+// if (port == null || port == "") { 
+//     port = 3000; 
+// }
 app.listen(port, () => console.log(`Server started at port ${port}.`));
 
 
