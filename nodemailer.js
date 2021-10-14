@@ -115,7 +115,7 @@ function newTemplate() {
 // Nodemailer email objects
 function mailNewInquiry(user_name, user_email, message) {
     return `{"from": "info@ashthomasweb.com",
-    "to": "rideoutweb@gmail.com",
+    "to": "ashthomasweb@gmail.com",
     "subject": "A person is reaching out about the LumberJack theme.",
     "html": "${inquiryTemplate()}"}`;
 };

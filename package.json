@@ -25,10 +25,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rideoutweb/template--ejs-prismic-curator-emailjs.git"
+    "url": "git+https://github.com/ashthomasweb/template--lumberjack.git"
   },
   "bugs": {
-    "url": "https://github.com/rideoutweb/template--ejs-prismic-curator-emailjs/issues"
+    "url": "https://github.com/ashthomasweb/template--lumberjack.git/issues"
   },
-  "homepage": "https://github.com/rideoutweb/template--ejs-prismic-curator-emailjs#readme"
+  "homepage": "https://github.com/ashthomasweb/template--lumberjack.git#readme"
 }
