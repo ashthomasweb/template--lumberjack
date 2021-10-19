@@ -6,6 +6,8 @@
 // file. Look for the setup instructions below. You must install all dependecies 
 // locally and on your host.
 
+// NPM Package to install on your host
+// const secure = require("ssl-express-www");
 
 // Dependencies 
 require('dotenv').config();
@@ -16,12 +18,13 @@ const ejs = require('ejs');
 const favicon = require('express-favicon');
 const nodemailer = require("nodemailer");
 
+
 var Prismic = require('prismic-javascript');
 var PrismicDOM = require('prismic-dom');
 var prismicEndpoint = 'https://lumberjack.prismic.io/api/v2';
 
 const app = express();
-
+// app.use(secure); // forces https and removes www
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -29,7 +32,6 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-
 
 // Prismic
 // Standardized URLs for known types
@@ -57,7 +59,6 @@ function initApi(req) {
     });
 };
 // END Prismic
-
 
 // ** LumberJack-Setup - Page titles and menu links
 // You need to change the appropriate route handler to reflect your page names 
@@ -164,18 +165,18 @@ app.post('/contact', function (req, res) {
 
         let inqTemplate = `
 
-        <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>
-            <h2>Hi Ash, someone is looking at the LumberJack Theme</h2>
-                <p>Below is a copy of the email.</p> 
-            <h2>From:</h2>
-                <p style='padding: 0 30px;'><strong>${user_name}</strong></p>
-            <h2>Email:</h2>
-                <p style='padding: 0 30px;'>${user_email}</p>
-            <h2>Message:</h2>
-                <p style='padding: 0 30px;'>${message}</p>
-        </div>
-        
-        `; // Do not remove backtick
+                <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>
+                    <h2>Hi Ash, someone is looking at the LumberJack Theme</h2>
+                        <p>Below is a copy of the email.</p> 
+                    <h2>From:</h2>
+                        <p style='padding: 0 30px;'><strong>${user_name}</strong></p>
+                    <h2>Email:</h2>
+                        <p style='padding: 0 30px;'>${user_email}</p>
+                    <h2>Message:</h2>
+                        <p style='padding: 0 30px;'>${message}</p>
+                </div>
+            
+            `; // Do not remove backtick
 
         let output = inqTemplate.replace(/\n/g, "").replace(/\r/g, "<br>");
         return output;
@@ -188,19 +189,19 @@ app.post('/contact', function (req, res) {
 
         let confTemplate = `
 
-        <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>   
-            <h2>Hi ${user_name}, thanks for checking out LumberJack.</h2>
-                <p>This is an automatic response confirming that your email was sent. I will reach out to you within the next few days. Below is a copy of your email.</p> 
-                <p>Remember, this is an automatic email and doesn't accept replys.</p>
-            <h2>From:</h2>
-                <p style='padding: 0 30px;'><strong>${user_name}</strong></p>  
-            <h2>Email:</h2>
-                <p style='padding: 0 30px;'>${user_email}</p>
-            <h2>Message:</h2>
-                <p style='padding: 0 30px;'>${message}</p>
-        </div>
+                <div style='max-width: 80%; padding: 30px; border: 1px solid lightgrey; border-radius: 12px; margin: 15px;'>   
+                    <h2>Hi ${user_name}, thanks for checking out LumberJack.</h2>
+                        <p>This is an automatic response confirming that your email was sent. I will reach out to you within the next few days. Below is a copy of your email.</p> 
+                        <p>Remember, this is an automatic email and doesn't accept replys.</p>
+                    <h2>From:</h2>
+                        <p style='padding: 0 30px;'><strong>${user_name}</strong></p>  
+                    <h2>Email:</h2>
+                        <p style='padding: 0 30px;'>${user_email}</p>
+                    <h2>Message:</h2>
+                        <p style='padding: 0 30px;'>${message}</p>
+                </div>
 
-        `; // Do not remove backtick
+            `; // Do not remove backtick
 
         let output = confTemplate.replace(/\n/g, "").replace(/\r/g, "<br>");
         return output;
@@ -241,20 +242,19 @@ app.post('/contact', function (req, res) {
 
     */
 
-
     // Nodemailer email objects
     function mailNewInquiry(user_name, user_email, message) {
         return `{"from": "info@ashthomasweb.com",
-    "to": "ashthomasweb@gmail.com",
-    "subject": "A person is reaching out about the LumberJack theme.",
-    "html": "${inquiryTemplate()}"}`;
+                "to": "ashthomasweb@gmail.com",
+                "subject": "A person is reaching out about the LumberJack theme.",
+                "html": "${inquiryTemplate()}"}`;
     };
 
     function mailConfirmation(user_name, user_email, message) {
         return `{"from": "info@ashthomasweb.com",
-    "to": "${user_email}",
-    "subject": "This is your email confirmation from LumberJack!",
-    "html": "${confirmTemplate()}"}`;
+                "to": "${user_email}",
+                "subject": "This is your email confirmation from LumberJack!",
+                "html": "${confirmTemplate()}"}`;
     };
 
     /*
@@ -265,7 +265,6 @@ app.post('/contact', function (req, res) {
         "html": "${newTemplate()}"}`;
     };
     */
-
 
     // Object parsing
     let inquiry = JSON.parse(mailNewInquiry(user_name, user_email, message));
@@ -301,24 +300,17 @@ app.post('/contact', function (req, res) {
                 responseBool: true,
                 isError: ifError,
             });
+            transporter.close();
         });
 
 });
 
-
 // || Listener 
-
-// const server = app.listen(0, () => {
-//     console.log('Server running at port:', server.address().port);
-// });
-
-
 
 let port = process.env.PORT;
 if (port == null || port == "") {
     port = 3000;
 }
 app.listen(port, () => console.log(`Server started at port ${port}.`));
-
 
 // || END of document

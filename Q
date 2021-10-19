@@ -1,0 +1,19 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   app.js
+#	deleted:    nodemailer.js
+#	modified:   views/blog.ejs
+#	modified:   views/contact.ejs
+#	modified:   views/home.ejs
+#	modified:   views/media.ejs
+#	modified:   views/partials/footer.ejs
+#	modified:   views/partials/header.ejs
+#	modified:   views/post.ejs
+#	modified:   views/technology.ejs
+#
