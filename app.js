@@ -129,7 +129,7 @@ app.get('/contact', function (req, res) {
     });
 });
 
-app.post('/contact', function (req, res) {
+app.post('/contact', async (req, res) => {
 
     let ifError = false;
 
@@ -142,19 +142,41 @@ app.post('/contact', function (req, res) {
 
     // ** LumberJack-Setup **
     // This is your nodemailer module. 
-    // You will need to edit this file. Look for the setup instructions below.
 
     // Mailer transport object 
-    var transporter = nodemailer.createTransport({
-        host: 'mi3-ts3.a2hosting.com',
-        port: 465,
-        secure: true,
+  
+    const oauth2Client = new OAuth2(
+        process.env.CLIENT_ID,
+        process.env.CLIENT_SECRET,
+        'https://developers.google.com/oauthplayground'
+    )
+
+    oauth2Client.setCredentials({
+        refresh_token: process.env.REFRESH_TOKEN
+    })
+
+    const accessToken = await new Promise((resolve, reject) => {
+        oauth2Client.getAccessToken((err, token) => {
+          if (err) {
+            console.log(err)
+            reject('Error');
+          }
+          resolve(token);
+        });
+      });
+    
+    let transporter = nodemailer.createTransport({
+        service: "Gmail",
         auth: {
+            type: 'OAuth2',
             user: process.env.MAIL_USER,
-            pass: process.env.MAIL_PASS,
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            refreshToken: process.env.REFRESH_TOKEN,
+            accessToken: accessToken
         }
     });
-
+  
     // ** LumberJack-Setup - Editing supplied HTML email templates **
 
     // Templates
@@ -244,16 +266,16 @@ app.post('/contact', function (req, res) {
 
     // Nodemailer email objects
     function mailNewInquiry(user_name, user_email, message) {
-        return `{"from": "info@ashthomasweb.com",
+        return `{"from": "ashthomasweb@gmail.com",
                 "to": "ashthomasweb@gmail.com",
                 "subject": "A person is reaching out about the LumberJack theme.",
                 "html": "${inquiryTemplate()}"}`;
     };
 
     function mailConfirmation(user_name, user_email, message) {
-        return `{"from": "info@ashthomasweb.com",
+        return `{"from": "ashthomasweb@gmail.com",
                 "to": "${user_email}",
-                "subject": "This is your email confirmation from LumberJack!",
+                "subject": "This is your email confirmation from Ashley, the developer of LumberJack!",
                 "html": "${confirmTemplate()}"}`;
     };
 
