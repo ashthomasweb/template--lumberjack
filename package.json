@@ -9,6 +9,7 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
+    "googleapis": "^92.0.0",
     "nodemailer": "^6.4.17",
     "prismic-dom": "^2.2.3",
     "prismic-javascript": "^3.0.2"
@@ -16,7 +17,6 @@
   "engines": {
     "node": "12.18.3"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
