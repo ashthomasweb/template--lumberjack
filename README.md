@@ -1,6 +1,6 @@
 # LumberJack
-> A lightweight template fully integrated with Prismic, Curator, and NodeMailer. 
-> View live at (https://lumberjack.herokuapp.com).
+> A lightweight template fully integrated with Prismic, Curator, and NodeMailer.
+> View live at (https://lumberjack-theme.herokuapp.com).
 
 ## Table of contents
 * [General info](#general-info)
@@ -25,7 +25,7 @@ In order to implement LumberJack, you will need to establish hosting and edit so
 If you are familiar with hosting services and already have brand images, colors, copy, and social accounts, you can expect to have the site fully running and styled in one day. If you are starting from scratch and need to generate images, copy, accounts, and a brand sense, expect 1 - 2 weeks for full deployment.
 
 ## Documentation
-LumberJack's setup documentation can be found on the LumberJack Blog. Head to (https://lumberjack.herokuapp.com/blog) to get started. You can find articles helping you setup NodeMailer, Prismic, Curator, and how to start integrating your brand content. You can find a text-only version in the root directory.
+LumberJack's setup documentation can be found on the LumberJack Blog. Head to (https://lumberjack-theme.herokuapp.com/blog) to get started. You can find articles helping you setup NodeMailer, Prismic, Curator, and how to start integrating your brand content. You can find a text-only version in the root directory.
 
 ## Screenshots
 ![Example screenshot](/public/images/readme/ss.png)
