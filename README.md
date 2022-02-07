@@ -20,7 +20,7 @@
 ## General info
 This template is targeted at the needs of small businesses bringing their products, services, or ideas to the web. Artisans, influencers, and private businesses need a way to integrate social media, ongoing public interest, and a strong brand sense. LumberJack provides a quick setup for even a beginner front-end dev. 
 
-In order to implement LumberJack, you will need to establish hosting and edit some code files, but if you can follow directions and are willing to learn something new along the way LumberJack is accesible to any developer. Your host and plan must support a Node runtime. If you wish to use gmail as your email provider, your host must support external SMTP. LumberJack is compatible with any SMTP email provider.
+In order to implement LumberJack, you will need to establish hosting and edit some code files, but if you can follow directions and are willing to learn something new along the way LumberJack is accessible to any developer. Your host and plan must support a Node runtime. If you wish to use gmail as your email provider, your host must support external SMTP. LumberJack is compatible with any SMTP email provider.
 
 If you are familiar with hosting services and already have brand images, colors, copy, and social accounts, you can expect to have the site fully running and styled in one day. If you are starting from scratch and need to generate images, copy, accounts, and a brand sense, expect 1 - 2 weeks for full deployment.
 

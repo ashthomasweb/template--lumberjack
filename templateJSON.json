@@ -121,7 +121,7 @@
             "link" : {
               "type" : "Slice",
               "fieldset" : "Link",
-              "description" : "Short, centered text field with embeded link",
+              "description" : "Short, centered text field with embedded link",
               "icon" : "all_inclusive",
               "display" : "list",
               "non-repeat" : {

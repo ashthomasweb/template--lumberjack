@@ -3,7 +3,7 @@
 // ** LumberJack-Setup **
 // This is your server application. It's a Node.js runtime and Express build. 
 // It uses EJS to dynamically render page content. You will need to edit this 
-// file. Look for the setup instructions below. You must install all dependecies 
+// file. Look for the setup instructions below. You must install all dependencies 
 // locally and on your host.
 
 // NPM Package to install on your host
@@ -133,7 +133,7 @@ app.post('/contact', async (req, res) => {
 
     let ifError = false;
 
-    // Data recieved from the contact form
+    // Data received from the contact form
     let {
         user_name,
         user_email,
